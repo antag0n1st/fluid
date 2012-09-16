@@ -6,7 +6,7 @@
         <div class="contact">
             <h2>Флуид Проект ДОО</h2>
             <div style="padding: 10px 5px 5px 0px;">
-                <p><img src="public/images/con_address.png" />ул. "Мито Хаџивасилев Јасмин</p>
+                <p><img src="public/images/con_address.png" />ул. „Мито Хаџивасилев Јасмин“</p>
                 <p>бр.48 блок V 1000 Скопје</p>
                 <p>Република Македонија</p>
 

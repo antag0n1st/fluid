@@ -6,7 +6,7 @@
 <div class="container o">
     <h3>Сите слајдови</h3>
     
-    <div>
+    <div>            
         <ul id="grid_sortable">
 
             
@@ -63,7 +63,7 @@
                     $.post("<?php echo base_url()?>admin/slides/update_slide_order/",
                             { pages: $('#grid_sortable').sortable('serialize') },
                             function(data){
-                                       // alert(data);
+                                      //  alert(data);
                             },
                             "text"
                     );

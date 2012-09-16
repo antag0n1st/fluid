@@ -1,0 +1,214 @@
+input[type=file]{
+    border: 1px solid #8b8b8b;
+    color: #2f363c;
+    padding: 0px 10px 0px 10px;
+    background-image: url('../images/input-file.jpg');
+    font-weight: bold;
+    font-size: 11px;
+    text-shadow: 1px 1px white;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=checkbox]{
+    height: 20px;
+    padding: 0px;
+    margin: 0px 5px 0px 40px;
+    cursor: pointer;
+}
+
+input[type=text]{
+    padding: 1px 3px 1px 3px;
+    margin: 5px 5px 5px 0px;
+    color: #4D4D4D;
+}
+
+label{ font-weight: bold; margin: 0px 4px 0px 0px; line-height: 18px;}
+
+.checkbutton-label{
+    font-weight: normal;margin: 0px 0px; line-height: inherit;
+    padding: 0px;
+    cursor: pointer;
+}
+
+select{ padding: 2px 5px 2px 5px;}
+
+.container .right{ margin-top: 25px;}
+
+.dashboard-widget{
+ width:440px;
+ float:left;
+ margin:15px 10px 25px 10px;
+}
+
+.dashboard-widget .body
+{
+    /*border-top:solid #4C51BB 1px;*/
+    padding: 10px 0 0 0;
+}
+
+.dashboard-widget .title{
+    background: #FAFAFA;
+    background: -moz-linear-gradient(#FAFAFA,#EAEAEA);
+    background: -webkit-linear-gradient(#FAFAFA,#EAEAEA);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
+    border-bottom: 1px solid #CACACA;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4),0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-widget h3{
+    font-size:17px;
+    padding: 5px 0 3px 5px;
+    margin:0px
+}
+
+.article-grid-holder{
+    margin:20px 0 0 0l
+}
+
+.article-grid-row{
+    width:950px;
+}
+
+.article-grid-thumbnail{
+    float:left;
+    width:240px;
+    height:100px;
+    overflow:hidden;
+}
+
+.article-grid-title{
+    padding:0 0 0 10px;
+    float:left;
+    width:350px;
+    height:70px;
+}
+
+.article-grid-date{
+    float:left;
+    width:120px;
+    height:70px;
+}
+
+.article-grid-status{
+    float:left;
+    width:80px;
+    height:70px;
+}
+
+.article-grid-edit-links{
+    float:left;
+    width:125px;
+}
+
+.small{
+    font-size:9px
+}
+
+.full{
+    width: 600px;
+}
+
+.block{
+    display:block;
+}
+
+.slide-grid-thumbnail{
+    float:left;
+    width:240px;
+    height:100px;
+    overflow:hidden;
+}
+
+.slide-grid-title{
+    padding:0 0 0 10px;
+    float:left;
+    width:450px;
+    height:70px;
+}
+
+.quote-grid-description{
+    float:left;
+    width:450px;
+}
+
+.quote-grid-author{
+    float:left;
+    width:250px;
+    padding: 0 0 0 20px;
+}
+
+.clients-grid-logo{
+    float:left;
+    width:250px;
+}
+
+.clients-grid-title{
+    float:left;
+    width:350px;
+}
+.menu-grid-text{
+    float:left;
+    width:350px;
+    height:30px;
+}
+.menu-grid-link{
+    float:left;
+    width:350px;
+}
+
+ul, li
+{
+    list-style-type: none;
+}
+
+.checkbox-statii{}
+
+.checkbox-statii ul{
+    overflow: hidden;
+}
+.checkbox-statii li{
+    margin-bottom: 3px;
+    overflow: hidden;
+    height: auto;
+}
+
+.checkbox-statii a{ 
+    min-height: 20px;
+    display: inline-block;
+    width: 410px;
+}
+.checkbox-statii input[type=checkbox]{ 
+    margin: 0px 10px 0px 10px;
+    display: block;
+    float: left;
+    height: 13px;
+}
+
+.candidates{
+    
+}
+.candidates td{
+    border-bottom:1px solid #C7C6C6;
+    padding:3px 3px 15px 3px;
+}
+
+.candidates th{
+    font-weight: bold;
+    border-bottom:1px solid #C7C6C6;
+    padding: 0 0 10px 0;
+}
+
+.admin-search-button{
+    width: 22px;
+    height: 22px;
+    background-image: url('../images/search.png');
+    float: right;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.admin-search-box{ float: right; width: 340px; margin-top: 60px; }
+
+.admin-search-box input{width: 300px; color: #ababab; margin-bottom: 5px;}
