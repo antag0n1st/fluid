@@ -13,7 +13,8 @@
             <div class="body">
                 <?php foreach ($articles as $article): ?>
                     <a href="<?php echo base_url(); ?>admin/articles/edit_article/<?php echo $article->id; ?>" title="Измени">
-                        <?php echo $article->title; ?>
+                        <?php echo mb_substr($article->title, 0, 60, 'utf-8') .
+                              ( strlen($article->title) > 60 ? '...' : '' );  ?>
                     </a>
                     <div class="separator"></div>
                 <?php endforeach; ?>

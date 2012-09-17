@@ -212,3 +212,31 @@ ul, li
 .admin-search-box{ float: right; width: 340px; margin-top: 60px; }
 
 .admin-search-box input{width: 300px; color: #ababab; margin-bottom: 5px;}
+
+
+body{
+    background-image: none;
+}
+
+h3{
+font-size: 18px;
+color: #0A3F89;
+margin: 15px 5px 15px 0px;
+line-height: 16px;
+}
+
+.float-left{
+    float:left;
+}
+.float-right{
+    float:right;
+}
+
+.separator{
+    width: 100%;
+    height: 0;
+    display: block;
+    margin: 10px auto 10px auto;
+    border-bottom: 1px solid #C7C6C6;
+    overflow: hidden;
+}

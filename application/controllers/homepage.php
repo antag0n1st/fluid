@@ -9,12 +9,16 @@ class Homepage extends MY_Controller {
                 Head::instance()->load_js('jquery.nivo.slider.pack');
                 $this->load->model('slides_model');
                 $this->load->model('menus_model');
+                $this->load->model('articles_model');
                  
                 $slides = $this->slides_model->get_slides();
                 $data['slides'] =   $slides;
                 
-                $menu_items = $data['menu_items'] = $this->menus_model->get_menu_items_with_children();
-         
+                $menu_items         = $data['menu_items']  = $this->menus_model->get_menu_items_with_children();
+                $latest_news        = $data['latest_news'] = $this->articles_model->get_latest_news();
+                $latest_projects    = $data['latest_projects']  =   $this->articles_model->get_articles_by_category(13, // projects
+                                                                                           array(),3,0);
+                
                 
                
                 $data['main_content'] = 'homepage';

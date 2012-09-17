@@ -4,26 +4,31 @@
 
     <div class="panel" style="margin-left: 0px;">
         <div class="home-header"><h2><a href="#">Новости</a></h2></div>
-
-        <div class="latest-news">
-            <a href="#" class="mask"><img alt="" src="public/images/news1.jpg" /></a>
-            <h3><a href="#">Физички филтер за филтрирање на вода.</a></h3>
-        </div>
-        <div class="separator dashed"></div>
-        <div class="latest-news">
-            <a href="#" class="mask"><img alt="" src="public/images/news2.jpg" /></a>
-            <h3><a href="#">Високо притисен механичко-хемиски филтер за отстранување на сите ...</a></h3>
-        </div>
-        <div class="separator dashed"></div>
-        <div class="latest-news">
-            <a href="#" class="mask"><img alt="" src="public/images/news3.jpg" /></a>
-            <h3><a href="#">Обработката на отпадните води е процес на отстранување на загадувачите...</a></h3>
-        </div>
+        
+        <?php foreach($latest_news as $news) : ?>
+        
+            <div class="latest-news">
+                <a href="<?php echo base_url(); ?>articles/<?php echo $news->id . '-' . $news->slug; ?>" class="mask">
+                    <img alt="" src="public/uploaded/featured/thumbnails/<?php echo $news->featured_image;  ?>" /></a>
+                <h3><a href="<?php echo base_url(); ?>articles/<?php echo $news->id . '-' . $news->slug; ?>"><?php echo $news->title; ?></a></h3>
+            </div>
+        
+        <?php endforeach; ?>
     </div>
     
     <div class="panel">
         <div class="home-header" ><h2><a href="#">Проекти</a></h2></div>
 
+        <?php foreach($latest_projects as $project): ?>
+        
+        <div class="latest-projects">
+            <a  href="<?php echo base_url(); ?>articles/<?php echo $project->id . '-' . $project->slug; ?>" class="mask">
+                <img src="public/uploaded/featured/<?php echo $project->featured_image;  ?>" /></a>
+            <p><a  href="<?php echo base_url(); ?>articles/<?php echo $project->id . '-' . $project->slug; ?>"><?php echo $project->title; ?></a></p>
+        </div>
+        
+        <?php endforeach; ?>
+        
         <div class="latest-projects">
             <a href="#" class="mask"><img src="public/images/project1.jpg" /></a>
             <p><a href="#">Пречистителна станица за отпадни води Езерани (реконструкција и модернизација)</a></p>

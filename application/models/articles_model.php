@@ -102,7 +102,7 @@ class Articles_model extends CI_Model {
             $query .= " AND c.categories_id = 1 ";
             $query .= " AND a.date_published <= '" . TimeHelper::DateTimeAdjusted() . "' ";
             $query .= " ORDER BY a.date_published DESC ";
-            $query .= " LIMIT 6 ";
+            $query .= " LIMIT 3 ";
             
             $result = $this->db->query($query);
             
