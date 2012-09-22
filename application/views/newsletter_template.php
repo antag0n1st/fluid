@@ -470,8 +470,8 @@
                                                     <tr>
                                                         <td colspan="2" valign="middle" id="social">
                                                             <div mc:edit="std_social">
-                                                                &nbsp;<a href="http://twitter.com/TripleSGroup">Следи нè на Twitter</a> | 
-                                                                <a href="http://www.facebook.com//login.php#!/pages/Triple-S-Learning/321852101858?ref=ts">Следи нè на Facebook</a>&nbsp;
+                                                                &nbsp;<a href="http://twitter.com">Следи нè на Twitter</a> | 
+                                                                <a href="http://www.facebook.com/">Следи нè на Facebook</a>&nbsp;
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -498,7 +498,7 @@
                                                                 </p>
 
                                                                 <div style="float: left; width: 50%; margin: 0px;">
-                                                                    <p><strong>Triple S Group doo</strong> <br /> Ул. Орце Николов бр. 190-3/5 <br /> 1000 Скопје, <br /> Р.Македонија</p>
+                                                                    <p><strong>Fluid Project doo</strong> <br /> Ул. Орце Николов бр. 190-3/5 <br /> 1000 Скопје, <br /> Р.Македонија</p>
                                                                 </div>
                                                                 <div style="float: left; width: 50%; margin: 0px;">
                                                                     <p><strong>тел.:</strong> 02/ 3 112 048 <br /> <strong>факс:</strong> 02/ 3 112 395 <br /> <strong>жиро сметка:</strong> 530010100496686 <br /> <strong>депонент:</strong> Охридска Банка, АД Охрид <br /> <strong>даночен број:</strong> МК 4030005533741</p>

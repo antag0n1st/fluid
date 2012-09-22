@@ -50,10 +50,10 @@ class Articles extends MY_Controller {
                 
                 if(isset($article[0])){
                     $article = $article[0];
-                    Head::instance()->title = $article->title . ' | Triple S Group';
+                    Head::instance()->title = $article->title . ' | Fluid Project';
                     Head::instance()->description  = $article->description;
                     
-                    Head::instance()->fb_title = $article->title . ' | Triple S Group';
+                    Head::instance()->fb_title = $article->title . ' | Fluid Project';
                     Head::instance()->fb_description = $article->description;
                     Head::instance()->fb_image_url = base_url().'public/uploaded/featured/'.$article->featured_image;
                     Head::instance()->fb_page_url  = base_url().'articles/' . $article->id . '-' . $article->slug;
@@ -120,11 +120,11 @@ class Articles extends MY_Controller {
                 
                 
                 if(isset($current_category)){
-                    Head::instance()->title = $current_category->name . ' | Triple S Group';
-                    Head::instance()->description  = $current_category->name . ' | Triple S Group';
+                    Head::instance()->title = $current_category->name . ' | Fluid Project';
+                    Head::instance()->description  = $current_category->name . ' | Fluid Project';
                     
                     Head::instance()->fb_title = $current_category->name;
-                    Head::instance()->fb_description = $current_category->name . ' | Triple S Group';
+                    Head::instance()->fb_description = $current_category->name . ' | Fluid Project';
                     Head::instance()->fb_image_url = base_url().'public/uploaded/featured/'.$current_category->featured_image;
                     Head::instance()->fb_page_url  = base_url().'category/' . $current_category->id . '-' . $current_category->slug;
                 }

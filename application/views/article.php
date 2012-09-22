@@ -1,4 +1,4 @@
-<div class="container o" style="margin-top: 10px;">
+<div class="container o">
 
     <div class="left">
         <?php if($article): ?>

@@ -173,7 +173,7 @@ class Newsletter extends MY_Controller {
          
                 Head::instance()->title          = 'Пријавете се за Newsletter';
                 Head::instance()->description    = Head::instance()->title .
-                                                          ' Triple S Group';
+                                                          ' Fluid Project';
                 Head::instance()->keywords       = 'пријавување,обуки,тренинзи,професионално учење,семинари,маркетинг,продажба,семинари';
                 Head::instance()->fb_title       = Head::instance()->title;
                 Head::instance()->fb_description = Head::instance()->description . ' ' .
@@ -248,9 +248,9 @@ class Newsletter extends MY_Controller {
                 Head::instance()->load_js('jquery.flexslider-min');
                 Head::instance()->load_css('flexslider');
          
-                Head::instance()->title          = 'Triple S Group - Delivering Success';
+                Head::instance()->title          = 'Fluid Project - Delivering Success';
                 Head::instance()->description    = Head::instance()->title .
-                                                          ' Triple S Group';
+                                                          ' Fluid Project';
                 Head::instance()->keywords       = 'пријавување,обуки,тренинзи,професионално учење,семинари,маркетинг,продажба,семинари';
                 Head::instance()->fb_title       = Head::instance()->title;
                 Head::instance()->fb_description = Head::instance()->description . ' ' .
@@ -304,18 +304,12 @@ class Newsletter extends MY_Controller {
     public function unsubscribe($unsubscribe_id){
         
         
-        
-        
-        
-        
-        
-        
         Head::instance()->load_js('jquery.flexslider-min');
                 Head::instance()->load_css('flexslider');
          
-                Head::instance()->title          = 'Triple S Group - Delivering Success';
+                Head::instance()->title          = 'Fluid Project - Delivering Success';
                 Head::instance()->description    = Head::instance()->title .
-                                                          ' Triple S Group';
+                                                          ' Fluid Project';
                 Head::instance()->keywords       = 'пријавување,обуки,тренинзи,професионално учење,семинари,маркетинг,продажба,семинари';
                 Head::instance()->fb_title       = Head::instance()->title;
                 Head::instance()->fb_description = Head::instance()->description . ' ' .
