@@ -6,5 +6,5 @@
             <?php echo eval('?> '.$element->content.' ');  ?>
         <?php endif; ?>
     </div>
-    <div class="separator"></div>
+    <div class="separator dashed"></div>
 <?php endforeach; ?>
