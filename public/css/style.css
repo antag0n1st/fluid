@@ -168,10 +168,9 @@ background-image: linear-gradient(top,#3b75d3,#255cb4);
 }
 
 .slider-side{
-    width: 190px;
+    width: 258px;
     height: 309px;
     float: left;
-    margin-left: 10px;
     overflow: hidden;
     padding: 10px;
     border: 1px solid #C5C6F0;
@@ -180,7 +179,7 @@ background-image: linear-gradient(top,#3b75d3,#255cb4);
 
 .slider-side .wrap{
     overflow: hidden;
-    width: 190px;
+    width: 258px;
     height: 150px;
     margin-bottom: 10px;
     position: relative;
@@ -191,9 +190,11 @@ background-image: linear-gradient(top,#3b75d3,#255cb4);
     left: 0;
     bottom: 0;
     padding: 5px;
-    width: 180px;
+    width: 248px;
     background-image: url('../images/white.png');
 }
+.slider-side .wrap a{ color:#4D4D4D; text-decoration: none;}
+.slider-side .wrap a:hover{text-decoration: underline;}
 
 /************************** FOOTER *********************************************/
 

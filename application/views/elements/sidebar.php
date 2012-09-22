@@ -3,7 +3,7 @@
         <?php if ($element->type == 'view'): ?>
             <?php $this->load->view($element->content); ?>
         <?php else: ?>
-            <?php echo eval('?> '.$element->content.' ');  ?>
+            <?php echo eval('?> ' . $element->content . ' '); ?>
         <?php endif; ?>
     </div>
     <div class="separator dashed"></div>
