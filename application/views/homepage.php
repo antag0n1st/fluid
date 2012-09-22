@@ -1,3 +1,10 @@
+<script type="text/javascript">
+$(document).ready(function() {
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });     
+});
+</script>
 <?php $this->load->view('elements/slidebar'); ?>
 
 <div class="container o" style=" margin-top: 10px;">

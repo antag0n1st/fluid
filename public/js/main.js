@@ -48,12 +48,7 @@ $.fn.menu = function() {
 }
 
 $(document).ready(function() {
-	$('#menu').menu();
-        
-        $(window).load(function() {
-            $('#slider').nivoSlider();
-        });
-        
+    $('#menu').menu();
 //        $("#search_word").focus(function(){
 //            if($(this).val() == 'Пребарај...'){
 //                $(this).val('');
