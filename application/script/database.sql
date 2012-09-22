@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 22, 2012 at 05:40 PM
+-- Generation Time: Sep 22, 2012 at 06:36 PM
 -- Server version: 5.5.20
 -- PHP Version: 5.3.10
 
@@ -48,7 +48,7 @@ INSERT INTO `articles` (`id`, `title`, `description`, `content`, `date_created`,
 (67, 'Високо притисен механичко-хемиски филтер за отстранување на сите', 'Високо притисен механичко-хемиски филтер за отстранување на сите', '<p>Објавете нова статија</p>', '2012-09-17 00:52:20', '2012-07-28 13:44:00', 'visoko-pritisen-mehanichko-hemiski-filter-za-otstranuvanje-na-site', 'default_featured_image.jpg', 1),
 (68, 'Физички филтер за филтрирање на вода.', 'Физички филтер за филтрирање на вода.', '<p>Статија за физичкиот филтер за филтрирање на вода.</p>', '2012-09-17 01:00:42', '2012-09-17 00:52:50', 'fizichki-filter-za-filtriranje-na-voda', 'default_featured_image.jpg', 1),
 (72, 'Пречистителна станица за отпадни води Езерани (реконструкција и модернизација)', 'Проект за пречистителна станица за отпадни води Езерани', '<p>Проект за пречистителна станица за отпадни води Езерани</p>', '2012-09-17 09:49:21', '2012-09-17 09:47:00', 'prechistitelna-stanica-za-otpadni-vodi-ezerani-rekonstrukcija-i-modernizacija', 'default_featured_image.jpg', 1),
-(73, 'Систем за третман на санитарна и систем за третман на отпадна вода во ХЕЦ Св. Петка', 'Систем за третман на санитарна и систем за третман на отпадна вода во ХЕЦ Св. Петка', '<p><strong>Систем за третман на санитарна вода </strong><br /><br />Технолошкото решение за обработка на суровата вода се состои од следниве целини:</p>\n<ul>\n<li>Филтрација&nbsp;</li>\n<li>Омекнување&nbsp;</li>\n<li>Деминерализација&nbsp;</li>\n<li>Дезинфекција&nbsp;</li>\n</ul>\n<p><br />Технолошките решениа по фази се сертифицирани со правилник за третман на вода и NSF стандард. Капацитет на системот изнесува 2500 Л/час. <br /><br /></p>\n<p><img src="/fluid/public/uploaded/featured/hid1.jpg" /><img src="/fluid/public/uploaded/featured/hid2.jpg" /></p>\n<p><br /><br /><strong>Систем за третман на отпадна вода </strong><br /><br />Постројката е изведена како компактна целина и претставува систем за прочистување на отпадната вода која ги исполнува сите законски и нормативни стандарди. Влезната комунална отпадна вода е со следниве карактеристики:</p>\n<ul>\n<li>ХПК 200 &ndash; 400mg/L&nbsp;</li>\n<li>БПК5 250 &ndash; 250 mg/L&nbsp;</li>\n<li>Суспендирани материи 200 &ndash; 300 mg/L&nbsp;</li>\n<li>pH 6-8&nbsp;</li>\n</ul>\n<p><br />Номиналниот технолошки капацитет изнесува 10 ЕЖ, додека биолошкиот капацитет е 0,6 кгБПК5/ден. Технолошката постапка за прочистување на отпадните води е составена од:</p>\n<ul>\n<li>Егализација&nbsp;</li>\n<li>Аерација&nbsp;</li>\n<li>Кларификација&nbsp;</li>\n<li>Рециркулација&nbsp;</li>\n</ul>\n<p><br />Физичко-хемиските карактеристики на обработената вода се следниве:</p>\n<ul>\n<li>ХПК 80 &ndash; 120 mg/L&nbsp;</li>\n<li>БПК 5 15 &ndash; 25mg/L&nbsp;</li>\n<li>pH 6 - 8</li>\n</ul>', '2012-09-22 19:40:21', '2012-09-17 09:49:00', 'sistem-za-tretman-na-sanitarna-i-sistem-za-tretman-na-otpadna-voda-vo-hec', 'he-sveta-petka.jpg', 1),
+(73, 'Систем за третман на санитарна и систем за третман на отпадна вода во ХЕЦ Св. Петка', 'Систем за третман на санитарна и систем за третман на отпадна вода во ХЕЦ Св. Петка', '<p><strong>Систем за третман на санитарна вода </strong><br /><br />Технолошкото решение за обработка на суровата вода се состои од следниве целини:</p>\n<ul>\n<li>Филтрација&nbsp;</li>\n<li>Омекнување&nbsp;</li>\n<li>Деминерализација&nbsp;</li>\n<li>Дезинфекција&nbsp;</li>\n</ul>\n<p><br />Технолошките решениа по фази се сертифицирани со правилник за третман на вода и NSF стандард. Капацитет на системот изнесува 2500 Л/час. <br /><br /></p>\n<p><img src="/fluid/public/uploaded/hid1.jpg" width="300" height="195" style="margin-right: 20px;" /><img src="/fluid/public/uploaded/hid2.jpg" width="300" height="195" /></p>\n<p><br /><br /><strong>Систем за третман на отпадна вода </strong><br /><br />Постројката е изведена како компактна целина и претставува систем за прочистување на отпадната вода која ги исполнува сите законски и нормативни стандарди. Влезната комунална отпадна вода е со следниве карактеристики:</p>\n<ul>\n<li>ХПК 200 &ndash; 400mg/L&nbsp;</li>\n<li>БПК5 250 &ndash; 250 mg/L&nbsp;</li>\n<li>Суспендирани материи 200 &ndash; 300 mg/L&nbsp;</li>\n<li>pH 6-8&nbsp;</li>\n</ul>\n<p><br />Номиналниот технолошки капацитет изнесува 10 ЕЖ, додека биолошкиот капацитет е 0,6 кгБПК5/ден. Технолошката постапка за прочистување на отпадните води е составена од:</p>\n<ul>\n<li>Егализација&nbsp;</li>\n<li>Аерација&nbsp;</li>\n<li>Кларификација&nbsp;</li>\n<li>Рециркулација&nbsp;</li>\n</ul>\n<p><br />Физичко-хемиските карактеристики на обработената вода се следниве:</p>\n<ul>\n<li>ХПК 80 &ndash; 120 mg/L&nbsp;</li>\n<li>БПК 5 15 &ndash; 25mg/L&nbsp;</li>\n<li>pH 6 - 8</li>\n</ul>', '2012-09-22 20:33:18', '2012-09-17 09:49:00', 'sistem-za-tretman-na-sanitarna-i-sistem-za-tretman-na-otpadna-voda-vo-hec', 'he-sveta-petka.jpg', 1),
 (74, 'Филтер пиколо', 'Филтер пиколо', '<p>Пиколо претставува физичко-хемиски филтер за вода. Се состои од куќиште кое се монтира на самата чешма, а во себе содржи патрон со активен јаглен низ кој поминува водата од вашата чешма.<br /><br /></p>\n<ul>\n<li>хлор и хлориди во водата (преку 95%)</li>\n<li>пестициди - 70%трихалометани - 80%</li>\n<li>органски соединенија - 70%</li>\n<li>индустриски растворувачи - 70%</li>\n</ul>\n<div><br />Физичко филтрирање на:<br />\n<ul>\n<li>честички до 2 &micro; - преку 90%</li>\n<li>честички до 3 &micro; - 100%</li>\n</ul>\n<br />Пиколо е мал и практичен уред погоден за филтрирање на водата за пиење, готвење и сите останати потреби во вашето домаќинство.<br /><br />Потрошен материјал на овој уред се патрони со активен јаглен кои се менуваат на период од 3-6 месеци во зависност од потрошувачката на вода.<br /><br /><strong>Instapure Brands</strong> пиколо филтри се американски производ, кој на македонскиот пазар ви го овозможува Флуид Проект ДОО.&nbsp;</div>', '2012-09-17 11:07:30', '2012-09-17 10:25:00', 'filter-pikolo', 'default_featured_image.jpg', 1),
 (75, 'Профил на компанијата', 'Краток историјат на компанијата', '<p style="text-align: justify;">Флуид Проект ДОО е компанија во приватна сопственост, која на високо професионално и стручно ниво ги покрива областите на проектирање, консалтинг и инженеринг на еколошкиот третман на водата за пиење и отпадната вода, вода за фармацевтски и медицински потреби (GMP сертификат) , заштита на човековата околина и подводни истражувања, подводни активности, проектирање и изведба на објекти од посебен интерес, спортски и рекреативни базени, фонтани, автоматско управување и контрола на процесите, одржување и сервисирање на опремата и објектите и друго.<br /><br />Компанијата е формирана 1992 година, а нејзините пионерски чекори во истражувачките и развојни активности, во овие области датираат од 1983 година.<br /><br />Во досегашната работа Флуид Проект го покрива пазарот во Македонија, со посебен акцент на извоз на опрема и технологија во Косово, Бугарија, Бoсна и Херцеговина и Србија.<br /><br />Единствена, реномирана и потврдена компанија во изработка и спроведување на технологиите за GMP-сертификација на системите за&nbsp;обработка на вода за медицински и фармацевтски потреби во Република Македонија.<br /><br />Флуид Проект е носител на активноста во повеќе еколошки студии и проекти од областа на заштита на животната средина, истражувања на водните ресурси и заштита на подводни археолошки и природни реткости.<br /><br />Флуид Проект проектира и изведува објекти за третман на отпадна вода од комунални објекти, кланици и месна индустрија, индустрија за кожа, млечна индустрија, индустрија за масло, хемиска индустрија и др.<br /><br />Спортските и рекреативните базени и фонтани и за нив неопходна опрема со нивно одржување се дел од услугите и производите на Флуид Проект, компанија со богато искуство од стотина базени изведени во Македонија и надвор од неа, со склучени договори за одржување и хемиско третирање на истите.<br /><br />Зад широкиот спектар на услуги и производи стои професионален тим кој ви стои на располагање на вашите желби и потреби.&nbsp;</p>', '2012-09-18 09:50:00', '2012-09-18 09:47:00', 'profil-na-kompanijata', 'default_featured_image.jpg', 1),
 (76, '0', '0', '0', '2012-09-22 19:21:47', '1970-01-01 01:00:00', '', 'default_featured_image.jpg', 0);
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `articles_categories` (
   `articles_id` int(11) NOT NULL,
   `categories_id` int(11) NOT NULL,
   PRIMARY KEY (`articles_categories_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=454 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=507 ;
 
 --
 -- Dumping data for table `articles_categories`
@@ -81,7 +81,7 @@ INSERT INTO `articles_categories` (`articles_categories_id`, `articles_id`, `cat
 (65, 41, 4),
 (64, 41, 3),
 (396, 74, 7),
-(453, 73, 13),
+(506, 73, 13),
 (344, 72, 13);
 
 -- --------------------------------------------------------
@@ -723,7 +723,7 @@ CREATE TABLE IF NOT EXISTS `sidebar` (
   `is_deletable` int(10) unsigned DEFAULT NULL,
   `type` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `sidebar`
@@ -731,8 +731,9 @@ CREATE TABLE IF NOT EXISTS `sidebar` (
 
 INSERT INTO `sidebar` (`id`, `name`, `content`, `position`, `is_deletable`, `type`) VALUES
 (2, 'quotes', 'elements/quotes', 1, 0, 'view'),
-(4, 'social links', '<div class="social-buttons">\r\n<h3>Следи н&egrave;:</h3>\r\n<p><a href="http://www.facebook.com//login.php#!/pages/Triple-S-Learning/321852101858?ref=ts" target="_balnk"><img src="/tsl/images/icon-facebook-color.png" alt="" /></a> <a href="http://www.linkedin.com/in/tripleslearning" target="_balnk"><img src="/tsl/images/icon-linkedin-color.png" alt="" /></a> <a href="http://twitter.com/TripleSGroup" target="_blank"><img src="/tsl/images/icon-twitter-color.png" alt="" /></a> <a href="http://www.youtube.com/user/TripleSLearning" target="_balnk"><img src="/tsl/images/icon-youtube-color.png" alt="" /></a></p>\r\n</div>', 4, 0, 'content'),
-(11, 'Newsletter', 'elements/newsletter', 3, 0, 'view');
+(4, 'social links', '<div class="social-buttons">\r\n<h3>Следи н&egrave;:</h3>\r\n<p><a href="http://www.facebook.com//login.php#!/pages/Triple-S-Learning/321852101858?ref=ts" target="_balnk"><img src="/tsl/images/icon-facebook-color.png" alt="" /></a> <a href="http://www.linkedin.com/in/tripleslearning" target="_balnk"><img src="/tsl/images/icon-linkedin-color.png" alt="" /></a> <a href="http://twitter.com/TripleSGroup" target="_blank"><img src="/tsl/images/icon-twitter-color.png" alt="" /></a> <a href="http://www.youtube.com/user/TripleSLearning" target="_balnk"><img src="/tsl/images/icon-youtube-color.png" alt="" /></a></p>\r\n</div>', 3, 0, 'content'),
+(11, 'Newsletter', 'elements/newsletter', 2, 0, 'view'),
+(12, 'Проекти', 'elements/latest_projects', 0, 0, 'view');
 
 -- --------------------------------------------------------
 
