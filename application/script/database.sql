@@ -1,13 +1,20 @@
 -- phpMyAdmin SQL Dump
--- version 3.2.0.1
+-- version 3.4.10.1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 20, 2012 at 09:22 AM
--- Server version: 5.1.36
--- PHP Version: 5.3.0
+-- Generation Time: Sep 22, 2012 at 05:20 PM
+-- Server version: 5.5.20
+-- PHP Version: 5.3.10
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Database: `fluid`
@@ -19,6 +26,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- Table structure for table `articles`
 --
 
+DROP TABLE IF EXISTS `articles`;
 CREATE TABLE IF NOT EXISTS `articles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(2500) COLLATE utf8_unicode_ci NOT NULL,
@@ -46,7 +54,7 @@ INSERT INTO `articles` (`id`, `title`, `description`, `content`, `date_created`,
 (67, 'Високо притисен механичко-хемиски филтер за отстранување на сите', 'Високо притисен механичко-хемиски филтер за отстранување на сите', '<p>Објавете нова статија</p>', '2012-09-17 00:52:20', '2012-07-28 13:44:00', 'visoko-pritisen-mehanichko-hemiski-filter-za-otstranuvanje-na-site', 'default_featured_image.jpg', 1),
 (68, 'Физички филтер за филтрирање на вода.', 'Физички филтер за филтрирање на вода.', '<p>Статија за физичкиот филтер за филтрирање на вода.</p>', '2012-09-17 01:00:42', '2012-09-17 00:52:50', 'fizichki-filter-za-filtriranje-na-voda', 'default_featured_image.jpg', 1),
 (72, 'Пречистителна станица за отпадни води Езерани (реконструкција и модернизација)', 'Проект за пречистителна станица за отпадни води Езерани', '<p>Проект за пречистителна станица за отпадни води Езерани</p>', '2012-09-17 09:49:21', '2012-09-17 09:47:00', 'prechistitelna-stanica-za-otpadni-vodi-ezerani-rekonstrukcija-i-modernizacija', 'default_featured_image.jpg', 1),
-(73, 'Систем за третман на санитарна и систем за третман на отпадна вода во ХЕЦ Св. Петка', 'Систем за третман на санитарна и систем за третман на отпадна вода во ХЕЦ Св. Петка', '<p>Систем за третман на санитарна и систем за третман на отпадна вода во ХЕЦ Св. Петка</p>', '2012-09-17 09:58:57', '2012-09-17 09:49:00', 'sistem-za-tretman-na-sanitarna-i-sistem-za-tretman-na-otpadna-voda-vo-hec', 'he-sveta-petka.jpg', 1),
+(73, 'Систем за третман на санитарна и систем за третман на отпадна вода во ХЕЦ Св. Петка', 'Систем за третман на санитарна и систем за третман на отпадна вода во ХЕЦ Св. Петка', '<p><strong>Систем за третман на санитарна вода </strong><br /><br />Технолошкото решение за обработка на суровата вода се состои од следниве целини:</p>\n<ul>\n<li>Филтрација&nbsp;</li>\n<li>Омекнување&nbsp;</li>\n<li>Деминерализација&nbsp;</li>\n<li>Дезинфекција&nbsp;</li>\n</ul>\n<p><br />Технолошките решениа по фази се сертифицирани со правилник за третман на вода и NSF стандард. Капацитет на системот изнесува 2500 Л/час. <br /><br /></p>\n<p><img src="/fluidproject.com.mk/public/uploaded/featured/hid1.jpg" /><img src="/fluidproject.com.mk/public/uploaded/featured/hid2.jpg" /></p>\n<p><br /><br /><strong>Систем за третман на отпадна вода </strong><br /><br />Постројката е изведена како компактна целина и претставува систем за прочистување на отпадната вода која ги исполнува сите законски и нормативни стандарди. Влезната комунална отпадна вода е со следниве карактеристики:</p>\n<ul>\n<li>ХПК 200 &ndash; 400mg/L&nbsp;</li>\n<li>БПК5 250 &ndash; 250 mg/L&nbsp;</li>\n<li>Суспендирани материи 200 &ndash; 300 mg/L&nbsp;</li>\n<li>pH 6-8&nbsp;</li>\n</ul>\n<p><br />Номиналниот технолошки капацитет изнесува 10 ЕЖ, додека биолошкиот капацитет е 0,6 кгБПК5/ден. Технолошката постапка за прочистување на отпадните води е составена од:</p>\n<ul>\n<li>Егализација&nbsp;</li>\n<li>Аерација&nbsp;</li>\n<li>Кларификација&nbsp;</li>\n<li>Рециркулација&nbsp;</li>\n</ul>\n<p><br />Физичко-хемиските карактеристики на обработената вода се следниве:</p>\n<ul>\n<li>ХПК 80 &ndash; 120 mg/L&nbsp;</li>\n<li>БПК 5 15 &ndash; 25mg/L&nbsp;</li>\n<li>pH 6 - 8</li>\n</ul>', '2012-09-22 19:17:54', '2012-09-17 09:49:00', 'sistem-za-tretman-na-sanitarna-i-sistem-za-tretman-na-otpadna-voda-vo-hec', 'he-sveta-petka.jpg', 1),
 (74, 'Филтер пиколо', 'Филтер пиколо', '<p>Пиколо претставува физичко-хемиски филтер за вода. Се состои од куќиште кое се монтира на самата чешма, а во себе содржи патрон со активен јаглен низ кој поминува водата од вашата чешма.<br /><br /></p>\n<ul>\n<li>хлор и хлориди во водата (преку 95%)</li>\n<li>пестициди - 70%трихалометани - 80%</li>\n<li>органски соединенија - 70%</li>\n<li>индустриски растворувачи - 70%</li>\n</ul>\n<div><br />Физичко филтрирање на:<br />\n<ul>\n<li>честички до 2 &micro; - преку 90%</li>\n<li>честички до 3 &micro; - 100%</li>\n</ul>\n<br />Пиколо е мал и практичен уред погоден за филтрирање на водата за пиење, готвење и сите останати потреби во вашето домаќинство.<br /><br />Потрошен материјал на овој уред се патрони со активен јаглен кои се менуваат на период од 3-6 месеци во зависност од потрошувачката на вода.<br /><br /><strong>Instapure Brands</strong> пиколо филтри се американски производ, кој на македонскиот пазар ви го овозможува Флуид Проект ДОО.&nbsp;</div>', '2012-09-17 11:07:30', '2012-09-17 10:25:00', 'filter-pikolo', 'default_featured_image.jpg', 1),
 (75, 'Профил на компанијата', 'Краток историјат на компанијата', '<p style="text-align: justify;">Флуид Проект ДОО е компанија во приватна сопственост, која на високо професионално и стручно ниво ги покрива областите на проектирање, консалтинг и инженеринг на еколошкиот третман на водата за пиење и отпадната вода, вода за фармацевтски и медицински потреби (GMP сертификат) , заштита на човековата околина и подводни истражувања, подводни активности, проектирање и изведба на објекти од посебен интерес, спортски и рекреативни базени, фонтани, автоматско управување и контрола на процесите, одржување и сервисирање на опремата и објектите и друго.<br /><br />Компанијата е формирана 1992 година, а нејзините пионерски чекори во истражувачките и развојни активности, во овие области датираат од 1983 година.<br /><br />Во досегашната работа Флуид Проект го покрива пазарот во Македонија, со посебен акцент на извоз на опрема и технологија во Косово, Бугарија, Бoсна и Херцеговина и Србија.<br /><br />Единствена, реномирана и потврдена компанија во изработка и спроведување на технологиите за GMP-сертификација на системите за&nbsp;обработка на вода за медицински и фармацевтски потреби во Република Македонија.<br /><br />Флуид Проект е носител на активноста во повеќе еколошки студии и проекти од областа на заштита на животната средина, истражувања на водните ресурси и заштита на подводни археолошки и природни реткости.<br /><br />Флуид Проект проектира и изведува објекти за третман на отпадна вода од комунални објекти, кланици и месна индустрија, индустрија за кожа, млечна индустрија, индустрија за масло, хемиска индустрија и др.<br /><br />Спортските и рекреативните базени и фонтани и за нив неопходна опрема со нивно одржување се дел од услугите и производите на Флуид Проект, компанија со богато искуство од стотина базени изведени во Македонија и надвор од неа, со склучени договори за одржување и хемиско третирање на истите.<br /><br />Зад широкиот спектар на услуги и производи стои професионален тим кој ви стои на располагање на вашите желби и потреби.&nbsp;</p>', '2012-09-18 09:50:00', '2012-09-18 09:47:00', 'profil-na-kompanijata', 'default_featured_image.jpg', 1);
 
@@ -56,12 +64,13 @@ INSERT INTO `articles` (`id`, `title`, `description`, `content`, `date_created`,
 -- Table structure for table `articles_categories`
 --
 
+DROP TABLE IF EXISTS `articles_categories`;
 CREATE TABLE IF NOT EXISTS `articles_categories` (
   `articles_categories_id` int(11) NOT NULL AUTO_INCREMENT,
   `articles_id` int(11) NOT NULL,
   `categories_id` int(11) NOT NULL,
   PRIMARY KEY (`articles_categories_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=397 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=443 ;
 
 --
 -- Dumping data for table `articles_categories`
@@ -77,7 +86,7 @@ INSERT INTO `articles_categories` (`articles_categories_id`, `articles_id`, `cat
 (65, 41, 4),
 (64, 41, 3),
 (396, 74, 7),
-(354, 73, 13),
+(442, 73, 13),
 (344, 72, 13);
 
 -- --------------------------------------------------------
@@ -86,6 +95,7 @@ INSERT INTO `articles_categories` (`articles_categories_id`, `articles_id`, `cat
 -- Table structure for table `calendar_events`
 --
 
+DROP TABLE IF EXISTS `calendar_events`;
 CREATE TABLE IF NOT EXISTS `calendar_events` (
   `calendar_events_id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(2500) COLLATE utf8_unicode_ci NOT NULL,
@@ -122,6 +132,7 @@ INSERT INTO `calendar_events` (`calendar_events_id`, `title`, `date_created`, `d
 -- Table structure for table `calendar_events_categories`
 --
 
+DROP TABLE IF EXISTS `calendar_events_categories`;
 CREATE TABLE IF NOT EXISTS `calendar_events_categories` (
   `calendar_events_categories_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
@@ -154,6 +165,7 @@ INSERT INTO `calendar_events_categories` (`calendar_events_categories_id`, `name
 -- Table structure for table `candidates`
 --
 
+DROP TABLE IF EXISTS `candidates`;
 CREATE TABLE IF NOT EXISTS `candidates` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -187,6 +199,7 @@ INSERT INTO `candidates` (`id`, `name`, `phone`, `email`, `profession`, `company
 -- Table structure for table `categories`
 --
 
+DROP TABLE IF EXISTS `categories`;
 CREATE TABLE IF NOT EXISTS `categories` (
   `categories_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
@@ -217,6 +230,7 @@ INSERT INTO `categories` (`categories_id`, `name`, `description`, `slug`, `featu
 -- Table structure for table `clients`
 --
 
+DROP TABLE IF EXISTS `clients`;
 CREATE TABLE IF NOT EXISTS `clients` (
   `clients_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
@@ -268,6 +282,7 @@ INSERT INTO `clients` (`clients_id`, `name`, `image`, `link`, `date_created`) VA
 -- Table structure for table `emails`
 --
 
+DROP TABLE IF EXISTS `emails`;
 CREATE TABLE IF NOT EXISTS `emails` (
   `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
   `email` varchar(255) COLLATE utf8_bin DEFAULT NULL,
@@ -300,6 +315,7 @@ INSERT INTO `emails` (`id`, `email`, `created_at`, `is_unsubscribed`, `unsubscri
 -- Table structure for table `emails_sent`
 --
 
+DROP TABLE IF EXISTS `emails_sent`;
 CREATE TABLE IF NOT EXISTS `emails_sent` (
   `newsletter_id` smallint(5) unsigned NOT NULL,
   `email_id` smallint(5) unsigned NOT NULL,
@@ -313,33 +329,33 @@ CREATE TABLE IF NOT EXISTS `emails_sent` (
 --
 
 INSERT INTO `emails_sent` (`newsletter_id`, `email_id`, `date_sent`) VALUES
-(4, 1, '2012-07-24 09:21:58'),
-(4, 2, '2012-07-24 09:22:09'),
-(4, 3, '2012-07-24 09:22:20'),
-(4, 4, '2012-07-24 09:22:31'),
-(4, 5, '2012-07-24 09:22:42'),
-(4, 6, '2012-07-24 09:22:54'),
-(4, 7, '2012-07-24 09:23:05'),
-(4, 8, '2012-07-24 09:23:16'),
-(4, 16, '2012-07-24 09:23:27'),
-(3, 1, '2012-07-24 09:28:13'),
-(3, 2, '2012-07-24 09:28:24'),
-(3, 3, '2012-07-24 09:28:35'),
-(3, 4, '2012-07-24 09:28:46'),
-(3, 5, '2012-07-24 09:28:57'),
-(3, 6, '2012-07-24 09:29:09'),
-(3, 7, '2012-07-24 09:29:20'),
-(3, 8, '2012-07-24 09:29:31'),
-(3, 16, '2012-07-24 09:29:42'),
-(9, 1, '2012-08-02 17:48:23'),
-(9, 2, '2012-08-02 17:48:35'),
-(9, 3, '2012-08-02 17:48:48'),
-(9, 4, '2012-08-02 17:49:01'),
-(9, 5, '2012-08-02 17:49:14'),
-(9, 6, '2012-08-02 17:49:37'),
-(9, 7, '2012-08-02 17:49:52'),
-(9, 8, '2012-08-02 17:50:09'),
-(9, 16, '2012-08-02 17:50:23');
+(4, 1, '2012-07-24 07:21:58'),
+(4, 2, '2012-07-24 07:22:09'),
+(4, 3, '2012-07-24 07:22:20'),
+(4, 4, '2012-07-24 07:22:31'),
+(4, 5, '2012-07-24 07:22:42'),
+(4, 6, '2012-07-24 07:22:54'),
+(4, 7, '2012-07-24 07:23:05'),
+(4, 8, '2012-07-24 07:23:16'),
+(4, 16, '2012-07-24 07:23:27'),
+(3, 1, '2012-07-24 07:28:13'),
+(3, 2, '2012-07-24 07:28:24'),
+(3, 3, '2012-07-24 07:28:35'),
+(3, 4, '2012-07-24 07:28:46'),
+(3, 5, '2012-07-24 07:28:57'),
+(3, 6, '2012-07-24 07:29:09'),
+(3, 7, '2012-07-24 07:29:20'),
+(3, 8, '2012-07-24 07:29:31'),
+(3, 16, '2012-07-24 07:29:42'),
+(9, 1, '2012-08-02 15:48:23'),
+(9, 2, '2012-08-02 15:48:35'),
+(9, 3, '2012-08-02 15:48:48'),
+(9, 4, '2012-08-02 15:49:01'),
+(9, 5, '2012-08-02 15:49:14'),
+(9, 6, '2012-08-02 15:49:37'),
+(9, 7, '2012-08-02 15:49:52'),
+(9, 8, '2012-08-02 15:50:09'),
+(9, 16, '2012-08-02 15:50:23');
 
 -- --------------------------------------------------------
 
@@ -347,6 +363,7 @@ INSERT INTO `emails_sent` (`newsletter_id`, `email_id`, `date_sent`) VALUES
 -- Table structure for table `footer`
 --
 
+DROP TABLE IF EXISTS `footer`;
 CREATE TABLE IF NOT EXISTS `footer` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `content` text COLLATE utf8_unicode_ci NOT NULL,
@@ -358,22 +375,7 @@ CREATE TABLE IF NOT EXISTS `footer` (
 --
 
 INSERT INTO `footer` (`id`, `content`) VALUES
-(1, '<div class="contact">
-<h2>Флуид Проект ДОО</h2>
-<div style="padding: 10px 5px 5px 0px;">
-<p><img src="/fluid/images/con_address.png" />ул. &bdquo;Мито Хаџивасилев Јасмин&ldquo;</p>
-<p>бр.48 блок V 1000 Скопје</p>
-<p>Република Македонија</p>
-</div>
-<div style="padding: 0px 5px 10px 0px;">
-<p><img src="/fluid/images/con_factory.png" />Производствен погон:</p>
-<p>ул. Радишанска бр.114</p>
-</div>
-<p><img src="/fluid/images/con_tel.png" />тел. +389 2 3130 143</p>
-<p><img src="/fluid/images/con_fax.png" />факс. +389 2 3212 767</p>
-<p><img src="/fluid/images/con_email.png" />e-mail. contact@fluidproject.com.mk</p>
-</div>
-<div class="map"><img src="/fluid/images/map.jpg" /></div>');
+(1, '<div class="contact">\n<h2>Флуид Проект ДОО</h2>\n<div style="padding: 10px 5px 5px 0px;">\n<p><img src="/fluid/images/con_address.png" />ул. &bdquo;Мито Хаџивасилев Јасмин&ldquo;</p>\n<p>бр.48 блок V 1000 Скопје</p>\n<p>Република Македонија</p>\n</div>\n<div style="padding: 0px 5px 10px 0px;">\n<p><img src="/fluid/images/con_factory.png" />Производствен погон:</p>\n<p>ул. Радишанска бр.114</p>\n</div>\n<p><img src="/fluid/images/con_tel.png" />тел. +389 2 3130 143</p>\n<p><img src="/fluid/images/con_fax.png" />факс. +389 2 3212 767</p>\n<p><img src="/fluid/images/con_email.png" />e-mail. contact@fluidproject.com.mk</p>\n</div>\n<div class="map"><img src="/fluid/images/map.jpg" /></div>');
 
 -- --------------------------------------------------------
 
@@ -381,6 +383,7 @@ INSERT INTO `footer` (`id`, `content`) VALUES
 -- Table structure for table `galleries`
 --
 
+DROP TABLE IF EXISTS `galleries`;
 CREATE TABLE IF NOT EXISTS `galleries` (
   `id_gallery` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `gallery_group_id` int(10) NOT NULL,
@@ -411,6 +414,7 @@ INSERT INTO `galleries` (`id_gallery`, `gallery_group_id`, `description`, `date_
 -- Table structure for table `gallery_groups`
 --
 
+DROP TABLE IF EXISTS `gallery_groups`;
 CREATE TABLE IF NOT EXISTS `gallery_groups` (
   `id_gallery_group` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -433,6 +437,7 @@ INSERT INTO `gallery_groups` (`id_gallery_group`, `name`, `date_created`) VALUES
 -- Table structure for table `gallery_photos`
 --
 
+DROP TABLE IF EXISTS `gallery_photos`;
 CREATE TABLE IF NOT EXISTS `gallery_photos` (
   `id_gallery_photos` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `galleries_id_gallery` int(10) unsigned NOT NULL,
@@ -479,6 +484,7 @@ INSERT INTO `gallery_photos` (`id_gallery_photos`, `galleries_id_gallery`, `imag
 -- Table structure for table `menu_items`
 --
 
+DROP TABLE IF EXISTS `menu_items`;
 CREATE TABLE IF NOT EXISTS `menu_items` (
   `menu_items_id` int(11) NOT NULL AUTO_INCREMENT,
   `text` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
@@ -518,6 +524,7 @@ INSERT INTO `menu_items` (`menu_items_id`, `text`, `link`, `parent_id`, `date_cr
 -- Table structure for table `newsletter`
 --
 
+DROP TABLE IF EXISTS `newsletter`;
 CREATE TABLE IF NOT EXISTS `newsletter` (
   `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(510) COLLATE utf8_bin NOT NULL,
@@ -546,6 +553,7 @@ INSERT INTO `newsletter` (`id`, `title`, `content`, `status`, `date_created`, `d
 -- Table structure for table `newsletter_articles`
 --
 
+DROP TABLE IF EXISTS `newsletter_articles`;
 CREATE TABLE IF NOT EXISTS `newsletter_articles` (
   `newsletter_id` smallint(5) unsigned NOT NULL,
   `article_id` int(10) unsigned NOT NULL,
@@ -587,6 +595,7 @@ INSERT INTO `newsletter_articles` (`newsletter_id`, `article_id`) VALUES
 -- Table structure for table `newsletter_clicks`
 --
 
+DROP TABLE IF EXISTS `newsletter_clicks`;
 CREATE TABLE IF NOT EXISTS `newsletter_clicks` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `newsletter_id` int(11) NOT NULL,
@@ -618,6 +627,7 @@ INSERT INTO `newsletter_clicks` (`id`, `newsletter_id`, `article_id`, `email_id`
 -- Table structure for table `popup`
 --
 
+DROP TABLE IF EXISTS `popup`;
 CREATE TABLE IF NOT EXISTS `popup` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `image_url` varchar(2500) COLLATE utf8_unicode_ci NOT NULL,
@@ -639,6 +649,7 @@ INSERT INTO `popup` (`id`, `image_url`, `link`, `is_active`) VALUES
 -- Table structure for table `quotes`
 --
 
+DROP TABLE IF EXISTS `quotes`;
 CREATE TABLE IF NOT EXISTS `quotes` (
   `quotes_id` int(11) NOT NULL AUTO_INCREMENT,
   `description` varchar(5000) COLLATE utf8_unicode_ci NOT NULL,
@@ -708,6 +719,7 @@ INSERT INTO `quotes` (`quotes_id`, `description`, `author`, `date_created`) VALU
 -- Table structure for table `sidebar`
 --
 
+DROP TABLE IF EXISTS `sidebar`;
 CREATE TABLE IF NOT EXISTS `sidebar` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_bin DEFAULT NULL,
@@ -733,6 +745,7 @@ INSERT INTO `sidebar` (`id`, `name`, `content`, `position`, `is_deletable`, `typ
 -- Table structure for table `slides`
 --
 
+DROP TABLE IF EXISTS `slides`;
 CREATE TABLE IF NOT EXISTS `slides` (
   `slides_id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(2500) COLLATE utf8_unicode_ci NOT NULL,
@@ -753,3 +766,7 @@ INSERT INTO `slides` (`slides_id`, `title`, `description`, `link`, `image`, `dat
 (4, 'Еколошки пристап', '<p>ф</p>', '', 'slider3.jpg', '2012-09-17 10:01:31', 4),
 (5, 'Филтри за вода', '<p>Филтри за вода</p>', '', 'slider4.jpg', '2012-09-17 10:01:48', 3),
 (14, 'Пречистителни станици', '<p>opis</p>', '', 'slider2.jpg', '2012-09-17 01:02:19', 2);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
