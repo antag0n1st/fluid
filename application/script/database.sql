@@ -358,7 +358,22 @@ CREATE TABLE IF NOT EXISTS `footer` (
 --
 
 INSERT INTO `footer` (`id`, `content`) VALUES
-(1, '<div class="left" style="background-image: none;">\r\n<h3 style="color: white;">Контакт</h3>\r\n<p>Доколку не можете да го пронајдете тоа што Ве интересира или имате дополнително прашање, контактирајте н&egrave; на:</p>\r\n<br />\r\n<div style="float: left; width: 50%; margin: 0px;">\r\n<p><strong>Triple S Group doo</strong> <br /> Ул. Орце Николов бр. 190-3/5 <br /> 1000 Скопје, <br /> Р.Македонија</p>\r\n</div>\r\n<div style="float: left; width: 50%; margin: 0px;">\r\n<p><strong>тел.:</strong> 02/ 3 112 048 <br /> <strong>факс:</strong> 02/ 3 112 395 <br /> <strong>жиро сметка:</strong> 530010100496686 <br /> <strong>депонент:</strong> Охридска Банка, АД Охрид <br /> <strong>даночен број:</strong> МК 4030005533741</p>\r\n</div>\r\n</div>\r\n<div class="right" style="background-image: none; border-color: #747474;"><a href="https://maps.google.com/maps?q=42.006054,21.407708&amp;hl=en&amp;num=1&amp;t=h&amp;z=18" rel="nofollow" target="_blank"> <img src="http://maps.googleapis.com/maps/api/staticmap?center=42.00605,21.407711&amp;zoom=15&amp;size=300x206&amp;sensor=false&amp;maptype=hybrid&amp;markers=color:red%7Ccolor:red%7C42.00605,21.407711" alt="" /> </a></div>');
+(1, '<div class="contact">
+<h2>Флуид Проект ДОО</h2>
+<div style="padding: 10px 5px 5px 0px;">
+<p><img src="/fluid/images/con_address.png" />ул. &bdquo;Мито Хаџивасилев Јасмин&ldquo;</p>
+<p>бр.48 блок V 1000 Скопје</p>
+<p>Република Македонија</p>
+</div>
+<div style="padding: 0px 5px 10px 0px;">
+<p><img src="/fluid/images/con_factory.png" />Производствен погон:</p>
+<p>ул. Радишанска бр.114</p>
+</div>
+<p><img src="/fluid/images/con_tel.png" />тел. +389 2 3130 143</p>
+<p><img src="/fluid/images/con_fax.png" />факс. +389 2 3212 767</p>
+<p><img src="/fluid/images/con_email.png" />e-mail. contact@fluidproject.com.mk</p>
+</div>
+<div class="map"><img src="/fluid/images/map.jpg" /></div>');
 
 -- --------------------------------------------------------
 
