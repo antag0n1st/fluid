@@ -322,3 +322,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndCo
 .img-container{ overflow: hidden;}
 
 .social-buttons a{ margin-right: 5px; }
+
+.thumb{
+    margin: 0 10px 10px 0;
+}
