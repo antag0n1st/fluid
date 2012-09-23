@@ -6,7 +6,7 @@
         </p>
     </div>
     <div style="width:960px">
-        <div class="dashboard-widget">
+        <!--<div class="dashboard-widget">
             <div class="title">
             <h3>Најнови статии</h3>
             </div>
@@ -31,8 +31,8 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="dashboard-widget">
+        </div>-->
+       <!-- <div class="dashboard-widget">
             <div class="title">
             <h3>Најнови настани</h3>
             </div>
@@ -56,8 +56,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="dashboard-widget">
+        </div>-->
+       
+        <!--<div class="dashboard-widget">
             <div class="title">
             <h3>
                 Најнови галерии
@@ -83,8 +84,8 @@
                         </a>
                     </div>
                 </div>
-        </div>
-        <div class="dashboard-widget">
+        </div>-->
+        <!--<div class="dashboard-widget">
             <div class="title">
             <h3>Најнови писма</h3>
             </div>
@@ -108,6 +109,6 @@
                         </a>
                     </div>
                 </div>
-        </div>
+        </div>-->
     </div>
 </div>
