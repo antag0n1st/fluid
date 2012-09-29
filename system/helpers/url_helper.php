@@ -68,6 +68,15 @@ if ( ! function_exists('base_url'))
 	}
 }
 
+if ( ! function_exists('lang_url'))
+{
+	function lang_url($lang)
+	{
+		$CI =& get_instance();
+		return $CI->config->lang_url($lang);
+	}
+}
+
 // ------------------------------------------------------------------------
 
 /**

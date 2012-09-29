@@ -279,8 +279,12 @@ class CI_Config {
 	 */
 	function base_url($uri = '')
 	{
-		return $this->slash_item('base_url').ltrim($this->_uri_string($uri),'/');
+		return $this->slash_item('base_url').ltrim($this->_uri_string($uri),'/').Lang::$lang.'/';
 	}
+        
+        function lang_url($lang){
+                return $this->slash_item('base_url').ltrim($this->_uri_string(''),'/').$lang;
+        }
 
 	// -------------------------------------------------------------
 

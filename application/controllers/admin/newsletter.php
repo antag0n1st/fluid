@@ -128,7 +128,7 @@ class Newsletter extends MY_Admin_Controller {
         $per_page = 5;
         
         $emails = array();
-        $emails = $this->newsletter_model->get_all_emails($per_page,$this->uri->segment(4));
+        $emails = $this->newsletter_model->get_all_emails($per_page,$this->uri->segment(5));
         $config = array();
         
         $config['base_url'] =  base_url() . 'admin/newsletter/browse_emails/';
@@ -137,7 +137,7 @@ class Newsletter extends MY_Admin_Controller {
         
         $config['total_rows'] = $this->newsletter_model->get_total_emails();
         $config['per_page'] = $per_page; 
-        $config['uri_segment'] = '4'; 
+        $config['uri_segment'] = '5'; 
 
         $this->pagination->initialize($config); 
         

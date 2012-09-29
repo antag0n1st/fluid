@@ -38,11 +38,26 @@
 |
 */
 
+
 $route['default_controller'] = "homepage";
 $route['404_override'] = '';
 
-$route['articles/(:num)-(:any)'] = "articles/index/$1";
-$route['category/(:num)-(:any)'] = "articles/category/$1";
+$route['en'] = "";
+$route['mk'] = "";
+
+$route['en/contact'] = "contact";
+$route['mk/contact'] = "contact";
+
+$route['en/articles/(:num)-(:any)'] = "articles/index/$1";
+$route['mk/articles/(:num)-(:any)'] = "articles/index/$1";
+
+$route['en/admin/(:any)'] = 'admin/$1';
+$route['mk/admin/(:any)'] = 'admin/$1';
+
+
+$route['en/category/(:num)-(:any)'] = "articles/category/$1";
+$route['mk/category/(:num)-(:any)'] = "articles/category/$1";
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

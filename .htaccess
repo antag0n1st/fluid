@@ -3,9 +3,16 @@ RewriteEngine on
 #Action application/x-hg-php53 /cgi-sys/php53
 #AddHandler application/x-hg-php53 .php
 
-RewriteRule ^images/([a-zA-Z0-9\s\.\/,_-]+)$ public/images/$1
+
+
+RewriteRule ^(\w{2}\/)?public/(.*)$ public/$2
+RewriteRule ^(\w{2})$ index.php?lang=$1
+
+RewriteRule ^(\w{2}\/)?images/(.*)$ public/images/$2
 
 RewriteCond $1 !^(index\.php|resources|robots\.txt)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+RewriteRule ^(\w{2}\/)?(.*)$ index.php/$2?lang=$1 [L]
+
+

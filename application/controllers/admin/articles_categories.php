@@ -65,7 +65,7 @@ class Articles_categories extends MY_Admin_Controller {
         $per_page = 5;
         
         $categories = array();
-        $categories = $this->articles_model->get_categories(array(),$per_page,$this->uri->segment(4));
+        $categories = $this->articles_model->get_categories(array(),$per_page,$this->uri->segment(5));
         $config = array();
         
         $config['base_url'] =  base_url() . 'admin/articles_categories/show_categories/';
@@ -74,7 +74,7 @@ class Articles_categories extends MY_Admin_Controller {
         
         $config['total_rows'] = count($this->articles_model->get_categories());
         $config['per_page'] = $per_page; 
-        $config['uri_segment'] = '4'; 
+        $config['uri_segment'] = '5'; 
 
         $this->pagination->initialize($config); 
         

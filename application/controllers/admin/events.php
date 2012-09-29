@@ -25,7 +25,7 @@ class Events extends MY_Admin_Controller {
         $per_page = 10;
         
         $events = array();
-        $events = $this->events_model->get_events(array(),$per_page,$this->uri->segment(4));
+        $events = $this->events_model->get_events(array(),$per_page,$this->uri->segment(5));
         $config = array();
         
         $config['base_url'] =  base_url() . 'admin/events/show_events/';
@@ -34,7 +34,7 @@ class Events extends MY_Admin_Controller {
         
         $config['total_rows'] = $this->events_model->count_all_events();
         $config['per_page'] = $per_page; 
-        $config['uri_segment'] = '4'; 
+        $config['uri_segment'] = '5'; 
 
         $this->pagination->initialize($config); 
         

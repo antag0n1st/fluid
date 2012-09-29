@@ -204,12 +204,12 @@ class Articles extends MY_Admin_Controller {
         if(isset($search) and strlen($search))
         {
             $per_page = $total_rows; // show all search results on one page
-            $articles = $this->articles_model->search_articles($search, array(), $per_page,$this->uri->segment(4));
+            $articles = $this->articles_model->search_articles($search, array(), $per_page,$this->uri->segment(5));
             $total_rows = count($this->articles_model->search_articles($search));
         }
         else
         {
-            $articles = $this->articles_model->get_articles(array(),$per_page,$this->uri->segment(4));
+            $articles = $this->articles_model->get_articles(array(),$per_page,$this->uri->segment(5));
             $total_rows = $this->db->count_all_results('articles');
         }
         $config = array();
@@ -220,7 +220,7 @@ class Articles extends MY_Admin_Controller {
         
         $config['total_rows'] = $total_rows;
         $config['per_page'] = $per_page; 
-        $config['uri_segment'] = '4'; 
+        $config['uri_segment'] = '5'; 
 
         $this->pagination->initialize($config); 
         

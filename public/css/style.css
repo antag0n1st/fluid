@@ -348,8 +348,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndCo
     margin-left:10px;
 }
 
-.language-holder{
-    height:30px;
-    border: 1px solid #C5C6F0;
-    width:209px;
+.languages{
+    position: absolute;right: 0;top: 5px;
+}
+.languages a{
+    text-decoration: none;
+    border: none;
+    margin-left: 5px;
 }

@@ -136,7 +136,7 @@ class Clients extends MY_Admin_Controller {
         $per_page = 10;
         
         $clients = array();
-        $clients = $this->clients_model->get_clients(array(),$per_page,$this->uri->segment(4));
+        $clients = $this->clients_model->get_clients(array(),$per_page,$this->uri->segment(5));
         $config = array();
         
         $config['base_url'] =  base_url() . 'admin/clients/show_clients/';
@@ -145,7 +145,7 @@ class Clients extends MY_Admin_Controller {
         
         $config['total_rows'] = $this->clients_model->count_all_clients();
         $config['per_page'] = $per_page; 
-        $config['uri_segment'] = '4'; 
+        $config['uri_segment'] = '5'; 
 
         $this->pagination->initialize($config); 
         

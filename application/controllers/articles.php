@@ -111,7 +111,7 @@ class Articles extends MY_Controller {
                 $per_page = 5;
 
                 $articles = array();
-                $articles = $this->articles_model->get_articles_by_category($category_id,array(),$per_page,$this->uri->segment(3));
+                $articles = $this->articles_model->get_articles_by_category($category_id,array(),$per_page,$this->uri->segment(4));
                 $config = array();
 
                 $config['base_url'] =  base_url() . 'category/' . $current_category->id . '-' . $current_category->slug . '/';
@@ -120,7 +120,7 @@ class Articles extends MY_Controller {
 
                 $config['total_rows'] = count($this->articles_model->get_articles_by_category($category_id));
                 $config['per_page'] = $per_page; 
-                $config['uri_segment'] = '3'; 
+                $config['uri_segment'] = '4'; 
 
                 $this->pagination->initialize($config); 
                 

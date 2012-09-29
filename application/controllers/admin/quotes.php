@@ -89,7 +89,7 @@ class Quotes extends MY_Admin_Controller {
         $per_page = 5;
         
         $quotes= array();
-        $quotes = $this->quotes_model->get_quotes(array(),$per_page,$this->uri->segment(4));
+        $quotes = $this->quotes_model->get_quotes(array(),$per_page,$this->uri->segment(5));
         $config = array();
         
         $config['base_url'] =  base_url() . 'admin/quotes/show_quotes/';
@@ -98,7 +98,7 @@ class Quotes extends MY_Admin_Controller {
         
         $config['total_rows'] = $this->quotes_model->get_total_quotes();
         $config['per_page'] = $per_page; 
-        $config['uri_segment'] = '4'; 
+        $config['uri_segment'] = '5'; 
 
         $this->pagination->initialize($config); 
         $data['quotes'] =   $quotes;
