@@ -11,6 +11,8 @@ class Homepage extends MY_Controller {
                 $this->load->model('menus_model');
                 $this->load->model('articles_model');
                 $this->load->model('footer_model');
+                $this->load->model('documents_model');
+                
                 
                 $slides = $this->slides_model->get_slides();
                 $data['slides'] =   $slides;
@@ -21,6 +23,7 @@ class Homepage extends MY_Controller {
                                                                                            array(),3,0);
                 $footer             = $data['footer']           =   $this->footer_model->get_footer();
                 
+                $document           = $data['document']         =   $this->documents_model->get_document();
                
                 $data['main_content'] = 'homepage';
 		$this->load->view('layout/layout',$data);

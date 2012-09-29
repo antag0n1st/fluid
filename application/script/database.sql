@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 29, 2012 at 08:20 AM
+-- Generation Time: Sep 29, 2012 at 11:28 AM
 -- Server version: 5.1.36
 -- PHP Version: 5.3.0
 
@@ -748,3 +748,24 @@ INSERT INTO `slides` (`slides_id`, `title`, `description`, `link`, `image`, `dat
 (4, 'Еколошки пристап', '<p>ф</p>', '', 'slider3.jpg', '2012-09-17 10:01:31', 4),
 (5, 'Филтри за вода', '<p>Филтри за вода</p>', '', 'slider4.jpg', '2012-09-17 10:01:48', 3),
 (14, 'Пречистителни станици', '<p>opis</p>', '', 'slider2.jpg', '2012-09-17 01:02:19', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `uploaded_documents`
+--
+
+CREATE TABLE IF NOT EXISTS `uploaded_documents` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `file_name` text NOT NULL,
+  `image_name` varchar(2500) NOT NULL,
+  `date_created` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `uploaded_documents`
+--
+
+INSERT INTO `uploaded_documents` (`id`, `file_name`, `image_name`, `date_created`) VALUES
+(1, 'kako_do_zdrava_voda_za_pienje.pdf', 'water-drink.jpg', '2012-09-29 12:04:04');

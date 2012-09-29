@@ -7,6 +7,19 @@ $(document).ready(function() {
 </script>
 <?php $this->load->view('elements/slidebar'); ?>
 
+<div class="top-side-holder">
+    
+    <div class="language-holder">
+    Одберете јазик:
+    </div>
+    <div style="margin-top:10px">
+        <?php $this->load->view('elements/fb-likebox-default'); ?>
+    </div>
+</div>
+
+
+
+
 <div class="container o" style=" margin-top: 10px;">
 
     <div class="panel" style="margin-left: 0px;">
@@ -36,16 +49,17 @@ $(document).ready(function() {
         
         <?php endforeach; ?>
         
-        <div class="latest-projects">
-            <a href="#" class="mask"><img src="public/images/project1.jpg" /></a>
-            <p><a href="#">Пречистителна станица за отпадни води Езерани (реконструкција и модернизација)</a></p>
-        </div>
-        <div class="latest-projects">
-            <a href="#" class="mask"><img src="public/images/project2.jpg" /></a>
-            <p><a href="#">Систем за третман на санитарна и систем за третман на отпадна вода во ХЕЦ Св. Петка</a></p>
-        </div>
+       
     </div>
     
-    <div class="panel" style="margin-right: 0px;"></div>
+    <div class="panel" style="margin-right: 0px;">
+        <div class="home-header" ><h2><a href="#">Специјално</a></h2></div>
+        <div style="padding:10px">
+            <a href="<?php echo base_url(); ?>public/uploaded/documents/<?php echo $document->file_name; ?>" target="_blank">
+            <img src="<?php echo base_url(); ?>public/uploaded/documents/document_images/<?php echo $document->image_name; ?>" alt="" width="284" />
+            </a>
+            
+        </div>
+    </div>
 
 </div>

@@ -80,6 +80,11 @@
                 <li><a href="<?php echo base_url(); ?>admin/clients/show_clients">Сите клиенти</a></li>
             </ul>
         </li>-->
+        <li><a href="#">Документи</a>
+            <ul>
+                <li><a href="<?php echo base_url(); ?>admin/upload_documents">Прикачи документ</a></li>
+            </ul>
+        </li>
         <li><a href="#">Странично мени</a>
             <ul>
                 <li><a href="<?php echo base_url(); ?>admin/sidebar/add_element">Нов елемент</a></li>

@@ -59,6 +59,13 @@ class Articles extends MY_Controller {
                     Head::instance()->fb_page_url  = base_url().'articles/' . $article->id . '-' . $article->slug;
                 }
                 
+                
+                
+                $latest_projects    = $data['latest_projects']  =   $this->articles_model->get_articles_by_category(13, // projects
+                                                                                           array(),2,0);
+                
+                
+                
                 $menu_items = $this->menus_model->get_menu_items_with_children();
 
                 $quote  = $this->quotes_model->get_quote_of_the_day();
@@ -132,7 +139,8 @@ class Articles extends MY_Controller {
                 
                 
                 
-                
+                 $latest_projects    = $data['latest_projects']  =   $this->articles_model->get_articles_by_category(13, // projects
+                                                                                           array(),2,0);
                 
                 
                 

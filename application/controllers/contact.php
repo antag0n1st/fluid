@@ -16,7 +16,11 @@ class Contact extends MY_Controller{
             $this->load->model('footer_model');
             $footer = $this->footer_model->get_footer();
         
-        
+            $this->load->model('sidebar_model');
+            $sidebar_elements = $this->sidebar_model->get_sidebar_elements();
+            
+            $this->load->model('articles_model');
+            
             $is_sent = false;
             $this->input->post('name');
             
@@ -34,6 +38,10 @@ class Contact extends MY_Controller{
             $data['is_sent'] = $is_sent;
             $data['menu_items'] =   $menu_items;
             $data['footer'] =   $footer;
+            $data['sidebar_elements'] = $sidebar_elements;
+            
+            $latest_projects    = $data['latest_projects']  =   $this->articles_model->get_articles_by_category(13, // projects
+                                                                                           array(),2,0);
             
             Head::instance()->title = 'Контакт | Fluid Project';
             Head::instance()->title = 'Контакт форма и инфо | Fluid Project';

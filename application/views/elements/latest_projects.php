@@ -1,12 +1,12 @@
 <h3><a href="#">Наши Проекти</a></h3>
 <div class="slider-side">
-    
+    <?php foreach($latest_projects as $project): ?>
     <div class="wrap">
-        <img  src="/fluid/public/images/project1.jpg" />
-        <p><a href="#">Систем за третман на санитарна и систем за третман на отпадна вода во ХЕЦ Св. Петка</a></p>
+        <img  src="<?php echo base_url();?>public/uploaded/featured/<?php echo $project->featured_image;  ?>" alt="<?php echo $project->title; ?>" />
+        <p><a href="<?php echo base_url(); ?>articles/<?php echo $project->id . '-' . $project->slug; ?>">
+                <?php echo $project->title; ?>
+            </a>
+        </p>
     </div>
-    <div class="wrap">
-        <img style="height: 150px;" src="/fluid/public/images/project2.jpg" />
-        <p><a href="#">Име на некој си проект што се одвивал на некое пристаниште</a></p>
-    </div>
+    <?php endforeach; ?>
 </div>
