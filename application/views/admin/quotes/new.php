@@ -2,7 +2,7 @@
     <h3>Нов цитат</h3>
     <div class="left">
         <strong><?php if (isset($msg)) echo $msg; ?></strong>
-        <?php echo form_open('admin/quotes/submit_quote', array('id' => 'submit_quote_form')); ?>
+        <?php echo form_open(Lang::$lang.'/'.'admin/quotes/submit_quote', array('id' => 'submit_quote_form')); ?>
         <input type="hidden" name="quotes_id" value="<?php echo $quote->quotes_id; ?>" />
         <label class="block">Текст:</label><textarea name="description" style="width:555px"><?php FieldHelper::field($quote->quotes_id, $quote->description, ""); ?></textarea>
         <div class="separator"></div>

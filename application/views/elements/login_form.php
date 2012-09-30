@@ -13,7 +13,7 @@ if (isset($this->session) and $this->session->flashdata('message')){ //change!
 </div>  
    
 <?php
-echo form_open('login/submit');
+echo form_open(Lang::$lang.'/'.'login/submit');
 ?>
     <input type="hidden"    name="r" value="<?php if(array_key_exists('r', $_GET)) echo $_GET['r']; ?>" />
 <?php 

@@ -210,6 +210,7 @@ class Articles extends MY_Admin_Controller {
         else
         {
             $articles = $this->articles_model->get_articles(array(),$per_page,$this->uri->segment(5));
+            $this->db->where('lang', Lang::$lang);
             $total_rows = $this->db->count_all_results('articles');
         }
         $config = array();

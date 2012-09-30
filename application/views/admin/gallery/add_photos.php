@@ -18,7 +18,7 @@
             <iframe name="iframe-post-form" id="iframe-post-form" style="width:0px;height:0px"></iframe>
             
             <?php
-            echo form_open('admin/gallery/upload_image', array('id' => 'upload_image_form',
+            echo form_open(Lang::$lang.'/'.'admin/gallery/upload_image', array('id' => 'upload_image_form',
                 'enctype' => "multipart/form-data",
                 'target' => "iframe-post-form"));
             ?>
@@ -34,7 +34,7 @@
     
     
     
-    <?php echo form_open('admin/gallery/submit_photos', array('id' => 'submit_gallery_form')); ?>
+    <?php echo form_open(Lang::$lang.'/'.'admin/gallery/submit_photos', array('id' => 'submit_gallery_form')); ?>
         <fieldset>
             <div class="separator"></div>
             <input type="hidden" name="id_gallery" value="<?php echo $id_gallery; ?>" />

@@ -2,7 +2,7 @@
     <h3>Footer</h3>
     <strong><?php if (isset($msg)) echo $msg; ?></strong>
     <div class="separator"></div>
-     <?php echo form_open('admin/footer/edit_footer', array('id' => 'submit_footer_form')); ?>
+     <?php echo form_open(Lang::$lang.'/'.'admin/footer/edit_footer', array('id' => 'submit_footer_form')); ?>
     <div>
         <textarea name="content" id="content" style="height:450px;width:960px"><?php FieldHelper::field($page_footer->id, $page_footer->content, '')?></textarea>
     </div>    

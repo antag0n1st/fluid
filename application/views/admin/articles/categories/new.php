@@ -9,7 +9,7 @@
                 <img src="<?php FieldHelper::field($category->id, base_url() . 'public/uploaded/featured/' . $category->featured_image, ""); ?>" id="featured_image_preview" alt="" width="610px" />
             </div>
             <?php
-            echo form_open('admin/articles/upload_image', array('id' => 'upload_image_form',
+            echo form_open(Lang::$lang.'/'.'admin/articles/upload_image', array('id' => 'upload_image_form',
                 'enctype' => "multipart/form-data",
                 'target' => "iframe-post-form"));
             ?>
@@ -20,7 +20,7 @@
         </div><!-- featured image end -->
         <div class="separator"></div>
         
-        <?php echo form_open('admin/articles_categories/submit_category', array('id' => 'submit_categories_form')); ?>
+        <?php echo form_open(Lang::$lang.'/'.'admin/articles_categories/submit_category', array('id' => 'submit_categories_form')); ?>
         <input type="hidden" id="id" name="id" value="<?php FieldHelper::field($category->id, $category->id, 0); ?>" />
         <input type="hidden" id="slug" name="slug" value="<?php FieldHelper::field($category->id, $category->slug, ''); ?>" />
         <input type="hidden" id="featured_image_hidden" name="featured_image_hidden" value="<?php FieldHelper::field($category->id, $category->featured_image, "default_featured_image.jpg"); ?>" />

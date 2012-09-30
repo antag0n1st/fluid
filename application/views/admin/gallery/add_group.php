@@ -3,7 +3,7 @@
     <div class="left">
     <strong><?php if (isset($msg)) echo $msg; ?></strong>
     
-    <?php echo form_open('admin/gallery/add_group', array('id' => 'submit_form')); ?>
+    <?php echo form_open(Lang::$lang.'/'.'admin/gallery/add_group', array('id' => 'submit_form')); ?>
         <fieldset>
             <label>Наслов:</label><input type="text" name="title" value="<?php echo isset($title) ? $title : ''; ?>" />
             <input type="hidden" value="<?php echo isset($id) ? $id : '';  ?>" name="id" />

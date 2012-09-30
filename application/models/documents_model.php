@@ -17,6 +17,8 @@ class Documents_model extends CI_Model {
     public function get_document()
     {
         $result = $this->db->get('uploaded_documents');
+        $this->db->where('lang', Lang::$lang);
+        
         $document =  $result->result();
         if(count($document) == 1)
         {
@@ -28,6 +30,8 @@ class Documents_model extends CI_Model {
     public function update_document($data)
     {
         $this->db->where('id',$data->id);
+        $this->db->where('lang', Lang::$lang);
+        
         $this->db->update('uploaded_documents', $data);
     }
 }

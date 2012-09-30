@@ -3,7 +3,7 @@
     <div class="left">
     <strong><?php if (isset($msg)) echo $msg; ?></strong>
     
-    <?php echo form_open('admin/gallery/submit_gallery', array('id' => 'submit_gallery_form')); ?>
+    <?php echo form_open(Lang::$lang.'/'.'admin/gallery/submit_gallery', array('id' => 'submit_gallery_form')); ?>
         <fieldset>
             <label>Опис:</label><textarea name="description"></textarea>
             <div class="separator"></div>

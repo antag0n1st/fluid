@@ -24,6 +24,7 @@ class Articles_model extends CI_Model {
         {
             $this->db->where($key, $option);
         }
+        $this->db->where('lang', Lang::$lang);
         $this->db->from('articles');
         $this->db->select('id,
                            title,
@@ -59,6 +60,7 @@ class Articles_model extends CI_Model {
         {
             $this->db->where($key, $option);
         }
+        $this->db->where('a.lang', Lang::$lang);
         $this->db->where('ac.categories_id',$category_id);
         $this->db->from('articles a');
         $this->db->join('articles_categories ac', 'a.id = ac.articles_id');
@@ -99,6 +101,8 @@ class Articles_model extends CI_Model {
             $query .= " JOIN categories as c ";
             $query .= " ON ac.categories_id = c.categories_id ";
             $query .= " WHERE status = 1 ";
+            $query .= " AND a.lang = ".$this->db->escape(Lang::$lang)." ";
+            //$query .= " AND c.lang = ".$this->db->escape(Lang::$lang)." ";
             $query .= " AND c.categories_id = 1 ";
             $query .= " AND a.date_published <= '" . TimeHelper::DateTimeAdjusted() . "' ";
             $query .= " ORDER BY a.date_published DESC ";
@@ -119,27 +123,33 @@ class Articles_model extends CI_Model {
     
     
     public function insert_article($data)
-    {
+    {   $data->lang = Lang::$lang;
         $this->db->insert('articles',$data);
         return $this->db->insert_id();
     }
     
     
     public function update_article($data)
-    {
+    {  
         $this->db->where('id', $data->id);
+        $this->db->where('lang', Lang::$lang);
+        
         $this->db->update('articles',$data);
     }
     
     public function delete_article_categories($article_id)
     {
         $this->db->where('articles_id', $article_id);
+        $this->db->where('lang', Lang::$lang);
+        
         $this->db->delete('articles_categories');
     }
     
     public function delete_article($article_id)
     {
         $this->db->where('id', $article_id);
+        $this->db->where('lang', Lang::$lang);
+        
         $this->db->delete('articles');
     }
     
@@ -148,6 +158,8 @@ class Articles_model extends CI_Model {
         if(is_numeric($article_id))
         {
             $this->db->where('articles_id',$article_id);
+            $this->db->where('c.lang', Lang::$lang);
+            
             $this->db->from('articles_categories ac');
             $this->db->join('categories c', 'c.categories_id = ac.categories_id');
             $this->db->select('c.categories_id as categories_id');
@@ -170,7 +182,8 @@ class Articles_model extends CI_Model {
             foreach($categories as $category)
             {
                 $this->db->insert('articles_categories',array('articles_id'  => $article_id,
-                                                            'categories_id' => $category)
+                                                              'categories_id' => $category,
+                                                              'lang' => Lang::$lang  )
                                 );
             }
         }
@@ -181,6 +194,8 @@ class Articles_model extends CI_Model {
         if(is_array($categories) and count($categories) > 0)
         {
             $this->db->where('articles_id', $article_id);
+            $this->db->where('lang', Lang::$lang);
+            
             $this->db->delete('articles_categories');
             
             $this->insert_article_categories($article_id, $categories);
@@ -226,6 +241,8 @@ class Articles_model extends CI_Model {
         {
             $this->db->where($key, $option);
         }
+        $this->db->where('lang', Lang::$lang);
+        
         $this->db->from('categories');
         $this->db->select('categories_id,
                            name,
@@ -272,7 +289,8 @@ class Articles_model extends CI_Model {
             'slug'             =>  $data->slug,
             'featured_image'   =>  $data->featured_image,
             'logo'             =>  'logo.png',
-            'description'      =>  $data->description
+            'description'      =>  $data->description ,
+            'lang'             => Lang::$lang ,
         );
         
         
@@ -286,19 +304,24 @@ class Articles_model extends CI_Model {
             'name'             =>  $data->name,
             'description'      =>  $data->description,
             'slug'             =>  $data->slug,
-            'featured_image'   =>  $data->featured_image
+            'featured_image'   =>  $data->featured_image 
         );
         $this->db->where('categories_id', $c['categories_id']);
+        $this->db->where('lang', Lang::$lang);
         $this->db->update('categories',$c);
     }
     
     public function delete_category($category_id){
         
         $this->db->where('categories_id', $category_id);
+        $this->db->where('lang', Lang::$lang);
+        
         $this->db->delete('articles_categories');
         
         
         $this->db->where('categories_id', $category_id);
+        $this->db->where('lang', Lang::$lang);
+        
         $this->db->delete('categories');
     }
     

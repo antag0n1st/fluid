@@ -20,6 +20,7 @@ class Menus_model extends CI_Model {
         {
             $this->db->where($key, $option);
         }
+        $this->db->where('lang', Lang::$lang);
         $this->db->from('menu_items');
         $this->db->select('menu_items_id,
                            text,
@@ -132,17 +133,20 @@ class Menus_model extends CI_Model {
     }
     
      public function insert_menu_item($data){
+        $data->lang = Lang::$lang;
         $this->db->insert('menu_items', $data);
         return $this->db->insert_id();
     }
     
     public function update_menu_item($data){
         $this->db->where('menu_items_id', $data->menu_items_id);
+        $this->db->where('lang', Lang::$lang);
         $this->db->update('menu_items',$data);
     }
     
     public function delete_menu_item($menu_item_id){
         $this->db->where('menu_items_id', $menu_item_id);
+        $this->db->where('lang', Lang::$lang);
         $this->db->delete('menu_items');
     }
 }

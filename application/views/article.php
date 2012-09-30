@@ -18,7 +18,7 @@
             
             <div class="separator"></div>
             <div class="social-buttons">
-                <h3>Сподели ја оваа страница: </h3>
+                <h3><?php lang('Сподели ја оваа страница'); ?>: </h3>
                 <iframe src="//www.facebook.com/plugins/like.php?href=<?php echo urlencode($current_url); ?>&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=237839832902397" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
                 
                 <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>

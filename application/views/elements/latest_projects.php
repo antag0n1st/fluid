@@ -1,4 +1,4 @@
-<h3><a href="#">Наши Проекти</a></h3>
+<h3><a href="#"><?php lang('Наши Проекти'); ?></a></h3>
 <div class="slider-side">
     <?php foreach($latest_projects as $project): ?>
     <div class="wrap">

@@ -10,7 +10,7 @@
                 <img src="<?php FieldHelper::field($document->id, base_url() . 'public/uploaded/documents/document_images/' . $document->image_name, ""); ?>" id="featured_image_preview" alt="" width="284" />
             </div>
             <?php
-            echo form_open('admin/upload_documents/upload_image', array('id' => 'upload_image_form',
+            echo form_open(Lang::$lang.'/'.'admin/upload_documents/upload_image', array('id' => 'upload_image_form',
                 'enctype' => "multipart/form-data",
                 'target' => "iframe-post-form"));
             ?>
@@ -24,7 +24,7 @@
             <label>Фајл кој треба да се прикачи:</label>
             <iframe name="iframe-post-file-form" id="iframe-post-file-form" style="width:0px;height:0px"></iframe>
             <?php
-            echo form_open('admin/upload_documents/upload_file', array('id' => 'upload_file_form',
+            echo form_open(Lang::$lang.'/'.'admin/upload_documents/upload_file', array('id' => 'upload_file_form',
                 'enctype' => "multipart/form-data",
                 'target' => "iframe-post-file-form"));
             ?>
@@ -49,7 +49,7 @@
         
         <div><!-- save image and file begin -->
             
-           <?php echo form_open('admin/upload_documents/submit', array('id' => 'save_form') );
+           <?php echo form_open(Lang::$lang.'/'.'admin/upload_documents/submit', array('id' => 'save_form') );
             ?>
             
             <input type="hidden" id="featured_image_hidden" name="featured_image_hidden" value="" />

@@ -10,7 +10,7 @@
                 <img src="<?php FieldHelper::field($slide->slides_id, base_url() . 'public/uploaded/slider/' . $slide->image, ""); ?>" id="featured_image_preview" alt="" width="960px" />
             </div>
             <?php
-            echo form_open('admin/slides/upload_image', array('id' => 'upload_image_form',
+            echo form_open(Lang::$lang.'/'.'admin/slides/upload_image', array('id' => 'upload_image_form',
                 'enctype' => "multipart/form-data",
                 'target' => "iframe-post-form"));
             ?>
@@ -19,7 +19,7 @@
             <div id="progress"></div>
             </form>
         </div><!-- featured image end -->
-     <?php echo form_open('admin/slides/submit_slide', array('id' => 'submit_article_form')); ?>
+     <?php echo form_open(Lang::$lang.'/'.'admin/slides/submit_slide', array('id' => 'submit_article_form')); ?>
         <input type="hidden" id="slides_id" name="slides_id" value="<?php echo $slide->slides_id; ?>" />
         <input type="hidden" id="order_index" name="order_index" value="<?php FieldHelper::field($slide->slides_id,$slide->order_index,0); ?>" />
         

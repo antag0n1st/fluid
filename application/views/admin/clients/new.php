@@ -11,7 +11,7 @@
             <img src="<?php FieldHelper::field($client->clients_id, base_url() . 'public/uploaded/clients/' . $client->image, ""); ?>" id="featured_image_preview" alt="" width="120px" />
         </div>
         <?php
-        echo form_open('admin/clients/upload_image', array('id' => 'upload_image_form',
+        echo form_open(Lang::$lang.'/'.'admin/clients/upload_image', array('id' => 'upload_image_form',
             'enctype' => "multipart/form-data",
             'target' => "iframe-post-form"));
         ?>
@@ -20,7 +20,7 @@
         <div id="progress"></div>
         </form>
     </div><!-- featured image end -->
-     <?php echo form_open('admin/clients/submit_client', array('id' => 'submit_article_form')); ?>
+     <?php echo form_open(Lang::$lang.'/'.'admin/clients/submit_client', array('id' => 'submit_article_form')); ?>
     <input type="hidden" name="clients_id" id="clients_id" value="<?php echo $client->clients_id; ?>" />
     <input type="hidden" name="featured_image_hidden" id="featured_image_hidden" value="<?php FieldHelper::field($client->clients_id, $client->image, "");?>" />
     <div class="separator"></div>

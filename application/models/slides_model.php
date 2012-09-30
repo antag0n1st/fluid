@@ -24,6 +24,8 @@ class Slides_model extends CI_Model {
         {
             $this->db->where($key, $option);
         }
+        $this->db->where('lang', Lang::$lang);
+        
         $this->db->from('slides');
         $this->db->select('slides_id,
                            date_created,
@@ -52,6 +54,7 @@ class Slides_model extends CI_Model {
     public function get_max_order_index()
     {
         $this->db->select_max('order_index','m');
+        $this->db->where('lang', Lang::$lang);
         $result = $this->db->get('slides');
         
         if ($result->num_rows() > 0)
@@ -63,17 +66,20 @@ class Slides_model extends CI_Model {
     }
     
     public function insert_slide($data){
+        $data->lang = Lang::$lang;
         $this->db->insert('slides', $data);
         return $this->db->insert_id();
     }
     
     public function update_slide($data){
         $this->db->where('slides_id', $data->slides_id);
+        $this->db->where('lang', Lang::$lang);
         $this->db->update('slides',$data);
     }
     
     public function delete_slide($slide_id){
         $this->db->where('slides_id', $slide_id);
+        $this->db->where('lang', Lang::$lang);
         $this->db->delete('slides');
     }
 }

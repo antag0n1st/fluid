@@ -16,7 +16,7 @@ class Footer_model extends CI_Model {
     
     public function get_footer()
     {
-        $result = $this->db->get('footer');
+        $result = $this->db->get_where('footer',array('lang' => Lang::$lang));
         $footer =  $result->result();
         if(count($footer) == 1)
         {
@@ -28,6 +28,7 @@ class Footer_model extends CI_Model {
     public function update_footer($data)
     {
         $this->db->where('id',$data['id']);
+        $this->db->where('lang',  Lang::$lang);
         $this->db->update('footer', $data);
     }
     

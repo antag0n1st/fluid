@@ -3,7 +3,7 @@
     
     <div class="left">
         <strong><?php if (isset($msg)) echo $msg; ?></strong>
-        <?php echo form_open('admin/events_categories/submit_event_category', array('id' => 'submit_event_category_form')); ?>
+        <?php echo form_open(Lang::$lang.'/'.'admin/events_categories/submit_event_category', array('id' => 'submit_event_category_form')); ?>
         <input type="hidden" id="id" name="id" value="<?php FieldHelper::field($event_category->id, $event_category->id, 0); ?>" />
         <label class="block">Име:</label>
         <input type="text" style="width:300px" id="name" name="name" value="<?php FieldHelper::field($event_category->id, $event_category->name, ''); ?>" />

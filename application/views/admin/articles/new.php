@@ -27,7 +27,7 @@
                 <img src="<?php FieldHelper::field($article->id, base_url() . 'public/uploaded/featured/' . $article->featured_image, ""); ?>" id="featured_image_preview" alt="" width="610px" />
             </div>
             <?php
-            echo form_open('admin/articles/upload_image', array('id' => 'upload_image_form',
+            echo form_open(Lang::$lang.'/'.'admin/articles/upload_image', array('id' => 'upload_image_form',
                 'enctype' => "multipart/form-data",
                 'target' => "iframe-post-form"));
             ?>
@@ -37,7 +37,7 @@
             </form>
         </div><!-- featured image end -->
         <br />
-        <?php echo form_open('admin/articles/submit_article', array('id' => 'submit_article_form')); ?>
+        <?php echo form_open(Lang::$lang.'/'.'admin/articles/submit_article', array('id' => 'submit_article_form')); ?>
         <input type="hidden" id="article_id" name="article_id" value="<?php echo $article->id; ?>" />
         <input type="hidden" id="status" name="status" value="1" />
         <div>
