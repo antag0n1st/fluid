@@ -23,6 +23,10 @@ Lang::$regtext = array(
     'Внесете Име' => 'Please insert name' ,
     'Внесете еМаил' => 'Please insert email' ,
     'Внесете Порака' => 'Please insert message' ,
+    'Администрациона панела'    => 'Admin panel', 
+    'Почетна'       =>  'Homepage',
+    'Админ почетна' =>  'Admin homepage',
+    'Одјави се'     =>  'Logout',
     '' => '' ,
 );
 ?>

@@ -5,14 +5,22 @@
     }
 </style>
 <div class="container">
+    <div class="languages">
+        <a href="<?php echo lang_url('mk');?>/admin/home">
+            <img alt="mk" src="<?php echo base_url() . 'public/images/mk.jpg'; ?>" />
+        </a>
+        <a href="<?php echo lang_url('en'); ?>/admin/home">
+            <img alt="en" src="<?php echo base_url() . 'public/images/en.jpg'; ?>" />
+        </a>
+    </div>
     <ul id="menu" class="clear">
         <li>
-            <a href="#">Почетна</a>
+            <a href="#"><?php echo lang('Почетна'); ?></a>
             <ul>
                 <li><a href="<?php echo base_url(); ?>">&laquo; fluidproject.com.mk</a></li>
-                <li><a href="<?php echo base_url(); ?>admin/home">Админ почетна</a></li>
+                <li><a href="<?php echo base_url(); ?>admin/home"><?php echo lang('Админ почетна'); ?></a></li>
                 <li><a href="<?php echo base_url(); ?>admin/footer/view_footer">Footer</a></li>
-                <li><a href="<?php echo base_url(); ?>login/logout">Одјава</a></li>
+                <li><a href="<?php echo base_url(); ?>login/logout"><?php echo lang('Одјави се'); ?></a></li>
             </ul>
         </li>
         <li>
