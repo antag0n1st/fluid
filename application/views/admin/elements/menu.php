@@ -24,14 +24,14 @@
             </ul>
         </li>
         <li>
-            <a href="#">Статии</a>
+            <a href="#"><?php echo lang('Статии'); ?></a>
             <ul>
-                <li><a href="<?php echo base_url(); ?>admin/articles/new_article">Нова статија</a></li>
-                <li><a href="<?php echo base_url(); ?>admin/articles/show_articles">Сите статии</a></li>
-                <li><a href="#">Категории</a>
+                <li><a href="<?php echo base_url(); ?>admin/articles/new_article"><?php echo lang('Нова статија'); ?></a></li>
+                <li><a href="<?php echo base_url(); ?>admin/articles/show_articles"><?php echo lang('Сите статии'); ?></a></li>
+                <li><a href="#"><?php echo lang('Категории'); ?></a>
                     <ul>
-                        <li><a href="<?php echo base_url(); ?>admin/articles_categories/new_category">Нова категорија</a></li>
-                        <li><a href="<?php echo base_url(); ?>admin/articles_categories/show_categories">Сите категории</a></li>
+                        <li><a href="<?php echo base_url(); ?>admin/articles_categories/new_category"><?php echo lang('Нова категорија'); ?></a></li>
+                        <li><a href="<?php echo base_url(); ?>admin/articles_categories/show_categories"><?php echo lang('Сите категории'); ?></a></li>
                     </ul>
                 </li>
             </ul>
@@ -48,16 +48,16 @@
                 </li>
             </ul>
         </li>-->
-        <li><a href="#">Слајдови</a>
+        <li><a href="#"><?php echo lang('Слајдови'); ?></a>
             <ul>
-                <li><a href="<?php echo base_url(); ?>admin/slides/new_slide">Нов слајд</a></li>
-                <li><a href="<?php echo base_url(); ?>admin/slides/show_slides">Сите слајдови</a></li>
+                <li><a href="<?php echo base_url(); ?>admin/slides/new_slide"><?php echo lang('Нов слајд'); ?></a></li>
+                <li><a href="<?php echo base_url(); ?>admin/slides/show_slides"><?php echo lang('Сите слајдови'); ?></a></li>
             </ul>
         </li>
-        <li><a href="#">Мени</a>
+        <li><a href="#"><?php echo lang('Мени'); ?></a>
             <ul>
-                <li><a href="<?php echo base_url(); ?>admin/menu/new_menu_item">Нов линк</a></li>
-                <li><a href="<?php echo base_url(); ?>admin/menu/show_menu_items">Сите линкови</a></li>
+                <li><a href="<?php echo base_url(); ?>admin/menu/new_menu_item"><?php echo lang('Нов линк'); ?></a></li>
+                <li><a href="<?php echo base_url(); ?>admin/menu/show_menu_items"><?php echo lang('Сите линкови'); ?></a></li>
             </ul>
         </li>
         <!--<li>
@@ -88,15 +88,15 @@
                 <li><a href="<?php echo base_url(); ?>admin/clients/show_clients">Сите клиенти</a></li>
             </ul>
         </li>-->
-        <li><a href="#">Документи</a>
+        <li><a href="#"><?php echo lang('Документи'); ?></a>
             <ul>
-                <li><a href="<?php echo base_url(); ?>admin/upload_documents">Прикачи документ</a></li>
+                <li><a href="<?php echo base_url(); ?>admin/upload_documents"><?php echo lang('Прикачи документ'); ?></a></li>
             </ul>
         </li>
-        <li><a href="#">Странично мени</a>
+        <li><a href="#"><?php echo lang('Странично мени'); ?></a>
             <ul>
-                <li><a href="<?php echo base_url(); ?>admin/sidebar/add_element">Нов елемент</a></li>
-                <li><a href="<?php echo base_url(); ?>admin/sidebar/change_position">Сите елементи</a></li>
+                <li><a href="<?php echo base_url(); ?>admin/sidebar/add_element"><?php echo lang('Нов елемент'); ?></a></li>
+                <li><a href="<?php echo base_url(); ?>admin/sidebar/change_position"><?php echo lang('Сите елементи'); ?></a></li>
             </ul>
         </li>
     </ul>   
