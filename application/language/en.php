@@ -27,6 +27,7 @@ Lang::$regtext = array(
     'Почетна'       =>  'Homepage',
     'Админ почетна' =>  'Admin homepage',
     'Одјави се'     =>  'Logout',
+    'Почетна страница' => 'Home Page' ,
     '' => '' ,
 );
 ?>

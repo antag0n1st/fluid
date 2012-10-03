@@ -24,7 +24,7 @@ class Footer extends MY_Admin_Controller {
     {
         Head::instance()->title = 'Уреди Footer';
         $this->load->model('footer_model');
-        $data['id']        = 1;
+        $data['id']        = $this->input->post('id');
         $data['content']   = $this->input->post('content');
         
         $this->footer_model->update_footer($data);
