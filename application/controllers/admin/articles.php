@@ -66,9 +66,12 @@ class Articles extends MY_Admin_Controller {
         $article->content         =   $this->input->post('content');
         $article->description     =   $this->input->post('description');
           
+        $date_published = $this->input->post('date_published');
+        $time_published = strlen($this->input->post('time_published')) > 0 ? $this->input->post('time_published') : '00:00';
+        
         $article->date_published  =    TimeHelper::convert_datetime(
-                                            $this->input->post('date_published') . ' ' .
-                                            $this->input->post('time_published')
+                                            $date_published . ' ' .
+                                            $time_published
                                             );
         $article->date_created    =   TimeHelper::DateTimeAdjusted();
         $article->slug            =   CyrillicLatin::seo_friendly($article->title);
