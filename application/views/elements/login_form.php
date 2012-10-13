@@ -1,6 +1,6 @@
 <div class="container o" style="height:400px">
     <h3>
-        Најава
+        <?php lang('Најава'); ?>
     </h3>
 
 <div class="red" style="color:red;margin:5px">
@@ -19,7 +19,7 @@ echo form_open(Lang::$lang.'/'.'login/submit');
 <?php 
 // username
 $data = array('style' => 'display:block');
-echo form_label('Корисничко име', 'username', $data);
+echo form_label(lang('Корисничко име',true), 'username', $data);
 $data = array(
               'name'        => 'username',
               'id'          => 'username',
@@ -36,7 +36,7 @@ echo form_input($data);
 <?php 
 // password
 $data = array('style' => 'display:block');
-echo form_label('Лозинка', 'password', $data);
+echo form_label(lang('Лозинка', true), 'password', $data);
 $data = array(
               'name'        => 'password',
               'id'          => 'password',
@@ -53,7 +53,7 @@ echo form_password($data);
 <?php
     $data   = array(
         'name'  => 'submit',
-        'value' => 'Најави се',
+        'value' => lang('Најави се',true),
         'class' => 'button round'
     );
 

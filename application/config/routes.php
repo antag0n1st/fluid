@@ -45,6 +45,15 @@ $route['404_override'] = '';
 $route['en'] = "";
 $route['mk'] = "";
 
+$route['mk/login'] = 'login';
+$route['en/login'] = 'login';
+
+$route['en/login/(:any)'] = 'login/$1';
+$route['mk/login/(:any)'] = 'login/$1';
+
+
+
+
 $route['en/contact'] = "contact";
 $route['mk/contact'] = "contact";
 
@@ -57,6 +66,8 @@ $route['mk/admin/(:any)'] = 'admin/$1';
 
 $route['en/category/(:num)-(:any)'] = "articles/category/$1";
 $route['mk/category/(:num)-(:any)'] = "articles/category/$1";
+
+
 
 
 /* End of file routes.php */

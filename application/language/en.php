@@ -44,6 +44,12 @@ Lang::$regtext = array(
     'Странично мени'    =>  'Sidebar',
     'Нов елемент'       =>  'New sidebar element',
     'Сите елементи'     =>  'All sidebar elements',
+    'Лозинка' => 'Password' ,
+    'Најави се' => 'Log In' ,
+    'Корисничко име' => 'Username' ,
+    'Најава' => 'Please Log In' ,
+    'Неточна лозинка или корисничко име' => 'Invalid username of password' ,
+    'Полето %s е задолжително' => '%s is required' ,
     '' => '' ,
 );
 ?>

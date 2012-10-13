@@ -43,15 +43,15 @@ class Login extends MY_Controller {
         $username = $this->input->post('username');
         $password = $this->input->post('password');
         
-        $this->form_validation->set_rules('username', 'Корисничко име', 'required');
-	$this->form_validation->set_rules('password', 'Лозинка', 'required');
+        $this->form_validation->set_rules('username', lang('Корисничко име',true), 'required');
+	$this->form_validation->set_rules('password', lang('Лозинка',true), 'required');
         
-        $this->form_validation->set_message('required', 'Полето %s е задолжително');
+        $this->form_validation->set_message('required', lang('Полето %s е задолжително',true));
         
         if($this->form_validation->run() == TRUE)
         {
             if($username    ==  'admin' and
-               $password    ==  'tsltsl')
+               $password    ==  '123fluid321')
             {
                 $this->session->set_userdata('admin_loggedIn','Yes');
                 
@@ -69,7 +69,7 @@ class Login extends MY_Controller {
             }
             else
             {
-                $this->session->set_flashdata('message', 'Неточна лозинка или корисничко име');
+                $this->session->set_flashdata('message', lang('Неточна лозинка или корисничко име',true));
                 redirect(base_url() . "login");
             }
         }
