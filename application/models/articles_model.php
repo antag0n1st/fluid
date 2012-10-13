@@ -191,7 +191,7 @@ class Articles_model extends CI_Model {
     
     public function update_article_categories($article_id,$categories)
     {
-        if(is_array($categories) and count($categories) > 0)
+        if(is_array($categories))
         {
             $this->db->where('articles_id', $article_id);
             $this->db->where('lang', Lang::$lang);
