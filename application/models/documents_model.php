@@ -16,8 +16,9 @@ class Documents_model extends CI_Model {
     
     public function get_document()
     {
-        $result = $this->db->get('uploaded_documents');
         $this->db->where('lang', Lang::$lang);
+        $result = $this->db->get('uploaded_documents');
+        
         
         $document =  $result->result();
         if(count($document) == 1)
