@@ -6,6 +6,7 @@
     <div>
         <textarea name="content" id="content" style="height:450px;width:960px"><?php FieldHelper::field($page_footer->id, $page_footer->content, '')?></textarea>
     </div>    
+    <input type="hidden" name="id" value="<?php echo $page_footer->id; ?>" />
     <div class="separator"></div>
     <input type="submit" class="round button" name="submit" value="Зачувај" />
     </form>
