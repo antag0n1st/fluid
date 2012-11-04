@@ -1,12 +1,12 @@
 <div class="container o">
     <h3>Категорија</h3>
     <div class="left">
-        <strong><?php if (isset($msg)) echo $msg; ?></strong>
+        <strong style="color: red;"><?php if (isset($msg)) echo $msg; ?></strong>
         <div><!-- featured image begin -->
-            <label for="featured_image">Главна слика:</label><span class="small">(препорачани димензии: 608 x 250)</span>
+            <label for="featured_image">Главна слика:</label><span class="small">(препорачани димензии: 640 x 250)</span>
             <iframe name="iframe-post-form" id="iframe-post-form" style="width:0px;height:0px"></iframe>
-            <div class="featured-image-preview-holder" style="<?php FieldHelper::field($category->id, "width:610px;height:235px", "width:0px;height:0px"); ?>;overflow:hidden;">
-                <img src="<?php FieldHelper::field($category->id, base_url() . 'public/uploaded/featured/' . $category->featured_image, ""); ?>" id="featured_image_preview" alt="" width="610px" />
+            <div class="featured-image-preview-holder" style="<?php FieldHelper::field($category->id, "width:640px;height:250px", "width:0px;height:0px"); ?>;overflow:hidden;">
+                <img src="<?php FieldHelper::field($category->id, base_url() . 'public/uploaded/featured/' . $category->featured_image, ""); ?>" id="featured_image_preview" alt="" width="640px" />
             </div>
             <?php
             echo form_open(Lang::$lang.'/'.'admin/articles/upload_image', array('id' => 'upload_image_form',

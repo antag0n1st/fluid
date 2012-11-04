@@ -50,6 +50,8 @@ Lang::$regtext = array(
     'Најава' => 'Please Log In' ,
     'Неточна лозинка или корисничко име' => 'Invalid username of password' ,
     'Полето %s е задолжително' => '%s is required' ,
+    'Почетна страница' => 'Home Page' ,
+    'Сите документи' => 'All Documents' ,
     '' => '' ,
 );
 ?>

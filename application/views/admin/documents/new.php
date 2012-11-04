@@ -1,13 +1,15 @@
 <script src="<?php echo base_url() ?>public/js/jquery.iframe-post-form.js" type="text/javascript"></script>
 <div class="container o">
     <h3>Прикачување на документ</h3>
-    
+    <span style="color: red">
+        <?php echo isset($msg) ? $msg : ''; ?>
+    </span>
     <div>
     <!-- featured image begin -->
             <label for="featured_image">Насловна слика:</label><span class="small">(препорачани димензии: 284 x 240)</span>
             <iframe name="iframe-post-form" id="iframe-post-form" style="width:0px;height:0px"></iframe>
-            <div class="featured-image-preview-holder" style="<?php FieldHelper::field($document->id, "width:284px;height:240px", "width:0px;height:0px"); ?>;overflow:hidden;">
-                <img src="<?php FieldHelper::field($document->id, base_url() . 'public/uploaded/documents/document_images/' . $document->image_name, ""); ?>" id="featured_image_preview" alt="" width="284" />
+            <div class="featured-image-preview-holder" style="width:284px;height:240px;overflow:hidden;">
+                <img src="<?php FieldHelper::field($document->id, base_url() . 'public/uploaded/documents/document_images/' . $document->image_name, base_url().'public/uploaded/documents/document_images/documents_featured_image.jpg'); ?>" id="featured_image_preview" alt="" width="284" />
             </div>
             <?php
             echo form_open(Lang::$lang.'/'.'admin/upload_documents/upload_image', array('id' => 'upload_image_form',
@@ -49,12 +51,14 @@
         
         <div><!-- save image and file begin -->
             
-           <?php echo form_open(Lang::$lang.'/'.'admin/upload_documents/submit', array('id' => 'save_form') );
-            ?>
+           <?php 
+          
+           echo form_open(Lang::$lang.'/'.'admin/upload_documents/submit', array('id' => 'save_form') );
+           ?>
             
-            <input type="hidden" id="featured_image_hidden" name="featured_image_hidden" value="" />
-            <input type="hidden" id="featured_file_hidden" name="featured_file_hidden" value="" />
-            
+            <input type="hidden" id="featured_image_hidden" name="featured_image_hidden" value="<?php  echo $document->id ? $document->image_name : '';  ?>" />
+            <input type="hidden" id="featured_file_hidden" name="featured_file_hidden" value="<?php echo $document->id ? $document->file_name : ''; ?>" />
+            <input type="hidden" id="id" name="id" value="<?php echo $document->id ? $document->id : 0; ?>" />
              <input class="button round" type="submit" name="submit" value="Објави" />
             <?php echo form_close(); ?>
             

@@ -19,7 +19,7 @@ $(document).ready(function() {
 <div class="container o" style=" margin-top: 10px;">
 
     <div class="panel" style="margin-left: 0px;">
-        <div class="home-header"><h2><a href="#"><?php lang('Новости'); ?></a></h2></div>
+        <div class="home-header"><h2><?php lang('Новости'); ?></h2></div>
         
         <?php foreach($latest_news as $news) : ?>
         
@@ -33,7 +33,7 @@ $(document).ready(function() {
     </div>
     
     <div class="panel">
-        <div class="home-header" ><h2><a href="#"><?php lang('Проекти'); ?></a></h2></div>
+        <div class="home-header" ><h2><?php lang('Проекти'); ?></h2></div>
 
         <?php foreach($latest_projects as $project): ?>
         
@@ -49,11 +49,14 @@ $(document).ready(function() {
     </div>
     
     <div class="panel" style="margin-right: 0px;">
-        <div class="home-header" ><h2><a href="#"><?php lang('Специјално'); ?></a></h2></div>
+        <div class="home-header" ><h2><?php lang('Специјално'); ?></h2></div>
         <div style="padding:10px">
+            
+            <?php if(isset($document) and $document->id): ?>
             <a href="<?php echo base_url(); ?>public/uploaded/documents/<?php echo $document->file_name; ?>" target="_blank">
             <img src="<?php echo base_url(); ?>public/uploaded/documents/document_images/<?php echo $document->image_name; ?>" alt="" width="284" />
             </a>
+            <?php endif; ?>
             
         </div>
     </div>

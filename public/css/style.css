@@ -309,7 +309,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndCo
 
 .article-title{
     line-height: 20px;
-    max-width: 500px;
+    max-width: 620px;
     background: url(../images/white.png) top right repeat;
     position: absolute;
     left: 0px;
@@ -319,7 +319,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndCo
     top: 170px;
 }
 
-.img-container{ overflow: hidden;}
+.img-container{ overflow: hidden; width: 640px; height: 250px; }
+.img-container img {width:640px;}
 
 .social-buttons a{ margin-right: 5px; }
 

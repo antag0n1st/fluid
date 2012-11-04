@@ -23,7 +23,14 @@ class Homepage extends MY_Controller {
                                                                                            array(),3,0);
                 $footer             = $data['footer']           =   $this->footer_model->get_footer();
                 
-                $document           = $data['document']         =   $this->documents_model->get_document();
+                $documents           =    $this->documents_model->get_documents(1);
+                
+                if(!empty($documents)){
+                    $data['document']         = $documents[0];
+                }else{
+                    $data['document'] = new Document();
+                }
+                
                
                 $data['main_content'] = 'homepage';
 		$this->load->view('layout/layout',$data);

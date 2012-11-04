@@ -2,12 +2,12 @@
 <div class="container o">
     <h3>Нов Слајд</h3>
     <div class="left" style="width:960px">
-     <strong><?php if (isset($msg)) echo $msg; ?></strong>
+        <strong style="color: red;"><?php if (isset($msg)) echo $msg; ?></strong>
         <div><!-- featured image begin -->
-            <label for="featured_image">Слика за слајдерот:</label><span class="small">(препорачани димензии: 960 x 300)</span>
+            <label for="featured_image">Слика за слајдерот:</label><span class="small">(препорачани димензии: 715 x 284 пиксели)</span>
             <iframe name="iframe-post-form" id="iframe-post-form" style="width:0px;height:0px"></iframe>
-            <div class="featured-image-preview-holder" style="<?php FieldHelper::field($slide->slides_id, "width:960px;height:300px", "width:0px;height:0px"); ?>;overflow:hidden;">
-                <img src="<?php FieldHelper::field($slide->slides_id, base_url() . 'public/uploaded/slider/' . $slide->image, ""); ?>" id="featured_image_preview" alt="" width="960px" />
+            <div class="featured-image-preview-holder" style="<?php FieldHelper::field($slide->slides_id, "width:715px;height:284px", "width:0px;height:0px"); ?>;overflow:hidden;">
+                <img src="<?php FieldHelper::field($slide->slides_id, base_url() . 'public/uploaded/slider/' . $slide->image, ""); ?>" id="featured_image_preview" alt="" width="715px" />
             </div>
             <?php
             echo form_open(Lang::$lang.'/'.'admin/slides/upload_image', array('id' => 'upload_image_form',
@@ -31,11 +31,11 @@
             
         <label for="description" class="block">Опис:</label>
         
-        <input type="text" id="description" name="description" value="<?php FieldHelper::field($slide->slides_id, $slide->description, ""); ?>" class="full" />
+        <input type="text" id="description" name="description" value="<?php FieldHelper::field($slide->slides_id, $slide->description, "#"); ?>" class="full" />
         <div class="separator"></div>
         
         <label for="link" class="block">Линк:</label>
-        <input type="text" id="link" name="link" value="<?php FieldHelper::field($slide->slides_id, $slide->link, ""); ?>" class="full" />
+        <input type="text" id="link" name="link" value="<?php FieldHelper::field($slide->slides_id, $slide->link, "#"); ?>" class="full" />
         <div class="separator"></div>
         
         <input class="button round" type="submit" name="submit" value="Објави" />
@@ -66,10 +66,10 @@
                 var preview_holder = $('.featured-image-preview-holder');
                 featured_img.attr('src','<?php echo base_url() . 'public/uploaded/slider/'; ?>' +
                     response.featured_image_name);
-                featured_img.attr('width', '960px');
+                featured_img.attr('width', '715px');
                             
-                preview_holder.css('width','960px');
-                preview_holder.css('height','300px');
+                preview_holder.css('width','715px');
+                preview_holder.css('height','284px');
                             
                 $('#featured_image').val('');
                             

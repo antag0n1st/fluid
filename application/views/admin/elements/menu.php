@@ -36,18 +36,6 @@
                 </li>
             </ul>
         </li>
-        <!--<li><a href="#">Настани</a>
-            <ul>
-                <li><a href="<?php echo base_url(); ?>admin/events/new_event">Нов настан</a></li>
-                <li><a href="<?php echo base_url(); ?>admin/events/show_events">Сите настани</a></li>
-                <li><a href="#">Категории</a>
-                    <ul>
-                       <li><a href="<?php echo base_url(); ?>admin/events_categories/new_event_category">Нова категорија</a></li>
-                       <li><a href="<?php echo base_url(); ?>admin/events_categories/show_events_categories">Сите категории</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>-->
         <li><a href="#"><?php echo lang('Слајдови'); ?></a>
             <ul>
                 <li><a href="<?php echo base_url(); ?>admin/slides/new_slide"><?php echo lang('Нов слајд'); ?></a></li>
@@ -60,37 +48,10 @@
                 <li><a href="<?php echo base_url(); ?>admin/menu/show_menu_items"><?php echo lang('Сите линкови'); ?></a></li>
             </ul>
         </li>
-        <!--<li>
-            <a href="#">Newsletter</a>
-            <ul>
-                <li><a href="<?php echo base_url().'admin/newsletter/add_new'; ?>">Ново писмо</a></li>
-                <li><a href="<?php echo base_url().'admin/newsletter'; ?>">Сите писма</a></li>
-                <li><a href="<?php echo base_url().'admin/newsletter/browse_emails'; ?>">Сите емаил адреси</a></li>
-            </ul>
-        </li>-->
-        <!--<li><a href="#">Галерии</a>
-            <ul>
-                <li><a href="<?php echo base_url(); ?>admin/gallery/new_gallery">Нова галерија</a></li>
-                <li><a href="<?php echo base_url(); ?>admin/gallery">Сите галерии</a></li>
-                <li><a href="<?php echo base_url(); ?>admin/gallery/add_group">Нова Група</a></li>
-                <li><a href="<?php echo base_url(); ?>admin/gallery/browse_groups">Сите Групи</a></li>
-            </ul>
-        </li>-->
-        <!--<li><a href="#">Цитати</a>
-            <ul>
-                <li><a href="<?php echo base_url(); ?>admin/quotes/new_quote">Нов цитат</a></li>
-                <li><a href="<?php echo base_url(); ?>admin/quotes/show_quotes">Сите цитати</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Клиенти</a>
-            <ul>
-                <li><a href="<?php echo base_url(); ?>admin/clients/new_client">Нов клиент</a></li>
-                <li><a href="<?php echo base_url(); ?>admin/clients/show_clients">Сите клиенти</a></li>
-            </ul>
-        </li>-->
         <li><a href="#"><?php echo lang('Документи'); ?></a>
             <ul>
                 <li><a href="<?php echo base_url(); ?>admin/upload_documents"><?php echo lang('Прикачи документ'); ?></a></li>
+                <li><a href="<?php echo base_url(); ?>admin/upload_documents/browse"><?php echo lang('Сите документи'); ?></a></li>
             </ul>
         </li>
         <li><a href="#"><?php echo lang('Странично мени'); ?></a>
