@@ -1,1 +1,3 @@
+<div style="overflow: hidden;height: 320px; padding-top: 10px;">
 <iframe style="border: none; overflow: hidden; width: 210px; height: 330px;" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Ffluidproject&amp;width=210&amp;height=330&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;appId=116131805118490" frameborder="0" scrolling="no"></iframe>
+</div>

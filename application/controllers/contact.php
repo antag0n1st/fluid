@@ -29,7 +29,7 @@ class Contact extends MY_Controller{
                 $email = $this->input->post('email');
                 $message = $this->input->post('message');
                 $message = 'Испратено од: '.$name .' - '. $email. "\n\n" . $message;
-                Mailer::send($email, 'vladimir.apostolski@gmail.com' , 'Kонтакт - fluidproject.com.mk', $message);
+                Mailer::send($email, 'contact@fluidproject.com.mk' , 'Kонтакт - fluidproject.com.mk', $message);
                 $is_sent = true;
             }
             
